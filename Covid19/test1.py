@@ -4,40 +4,60 @@ import pgeocode
 import pypostalcode
 import pypostalcode
 import ssl
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 #voir https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org
 ssl._create_default_https_context = ssl._create_unverified_context
 nomi = pgeocode.Nominatim('ca')
 #print(nomi.query_postal_code('J7E').latitude)
 
+prov_lat_long = {'Alberta':{'lat':'55.000000','long':'-115.000000'},'Manitoba':{'lat':'53.760860','long':'-98.813873'},
+'New Brunswick':{'lat':'46.498390','long':'-66.159668'},'Newfoundland and Labrador':{'lat':'53.135509','long':'-57.660435'},
+'Newfoundland and Labrador':{'lat':'53.135509','long':'-57.660435'},'Northwest Territory':{'lat':'64.825500','long':'-124.845700'},
+'Nova Scotia':{'lat':'45.000000','long':'-63.000000'},'Nunavut Territory':{'lat':'70.453262','long':'-86.798981'},
+'Ontario':{'lat':'50.000000','long':'-85.000000'},'Prince Edward Island':{'lat':'46.250000','long':'-63.000000'},'Quebec':{'lat':'53.000000','long':'-70.000000'},'Saskatchewan':{'lat':'55.000000','long':'-106.000000'},'Yukon':{'lat':'64.282300','long':'135.000000'},'British Columbia':{'lat':'53.726669','long':'-127.647621'}}
+
 pcdb = pypostalcode.PostalCodeDatabase()
 
-pc_canada = []
-pc_quebec = []
+loc_canada = []
+loc_quebec = []
 
-#for i in pcdb.find_postalcode(province=None):
-#    pc_canada.append(i)
+#for loc in pcdb.find_postalcode(province=None):
+#    loc_canada.append(loc)
 
-for i in pcdb.find_postalcode(province='Quebec'):
-    pc_quebec.append(i)
-    print(i.postalcode)
+for loc in pcdb.find_postalcode(province='Quebec'):
+    loc_quebec.append(loc)
+    #print(loc.postalcode)
 
 myloc = pcdb['J7E']
 print(myloc.latitude, ' ',myloc.longitude)
 
-#print('Canada ' + str(len(pc_canada)))
-#print('Quebec ' + str(len(pc_quebec)))
+#print('Canada ' + str(len(loc_canada)))
+#print('Quebec ' + str(len(loc_quebec)))
 
 lat_long_file = '/data/Applications/GitScript/Covid19/LatLong.txt'
 
 lat_long_file_handler = open(lat_long_file,'w')
 
 
+for loc in loc_quebec:
+    rta = loc.postalcode
+    logging.info('Write latitude longitude for ' + rta)
+    lat_long_file_handler.write(rta + '\t' + str(format(pcdb[rta].latitude,'.6f')) + '\t' + str(format(pcdb[rta].longitude,'.6f')) + '\n')
+
+for prov in prov_lat_long.keys():
+    logging.info("Write latitude longitude for " + prov)
+    lat_long_file_handler.write(prov + "\t" + prov_lat_long[prov]['lat'] + "\t" + prov_lat_long[prov]['long'] + '\n')
+
+
 lat_long_file_handler.close()
 
+logging.info('Finish')
 
-myconn = pypostalcode.ConnectionManager()
-PC_FIND_ALL_PROVINCE = "SELECT distinct province from PostalCodes"
-print(myconn.query(PC_FIND_ALL_PROVINCE))
+#myconn = pypostalcode.ConnectionManager()
+#PC_FIND_ALL_PROVINCE = "SELECT distinct province from PostalCodes"
+#print(myconn.query(PC_FIND_ALL_PROVINCE))
 
 
 
