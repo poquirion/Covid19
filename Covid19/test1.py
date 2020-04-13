@@ -5,6 +5,7 @@ import pypostalcode
 import pypostalcode
 import ssl
 import logging
+import geopy
 
 logging.basicConfig(level=logging.DEBUG)
 #voir https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org
@@ -31,7 +32,7 @@ for loc in pcdb.find_postalcode(province='Quebec'):
     #print(loc.postalcode)
 
 myloc = pcdb['J7E']
-print(myloc.latitude, ' ',myloc.longitude)
+#print(myloc.latitude, ' ',myloc.longitude)
 
 #print('Canada ' + str(len(loc_canada)))
 #print('Quebec ' + str(len(loc_quebec)))
@@ -39,26 +40,44 @@ print(myloc.latitude, ' ',myloc.longitude)
 lat_long_file = '/data/Applications/GitScript/Covid19/LatLong.txt'
 
 lat_long_file_handler = open(lat_long_file,'w')
-
+'''
 
 for loc in loc_quebec:
     rta = loc.postalcode
     logging.info('Write latitude longitude for ' + rta)
     lat_long_file_handler.write(rta + '\t' + str(format(pcdb[rta].latitude,'.6f')) + '\t' + str(format(pcdb[rta].longitude,'.6f')) + '\n')
+'''
+
+'''
 
 for prov in prov_lat_long.keys():
     logging.info("Write latitude longitude for " + prov)
     lat_long_file_handler.write(prov + "\t" + prov_lat_long[prov]['lat'] + "\t" + prov_lat_long[prov]['long'] + '\n')
-
+'''
 
 lat_long_file_handler.close()
 
 logging.info('Finish')
 
-#myconn = pypostalcode.ConnectionManager()
-#PC_FIND_ALL_PROVINCE = "SELECT distinct province from PostalCodes"
-#print(myconn.query(PC_FIND_ALL_PROVINCE))
+myconn = pypostalcode.ConnectionManager()
+PC_FIND_ALL_PROVINCE = "SELECT distinct province from PostalCodes"
+prov_tuple = myconn.query(PC_FIND_ALL_PROVINCE)
+#print(prov_tuple)
+prov_list = [x[0] for x in prov_tuple]
+#print(prov_list)
 
+from geopy.geocoders import Nominatim
+geolocator = Nominatim(user_agent="my_application")
 
+lat_long_file_handler = open(lat_long_file,'w')
 
+for prov in prov_list:
+    print("PROV IS " + prov)
+    try:
+        location = geolocator.geocode(prov)
+        logging.info("Write latitude longitude for " + prov)
+        lat_long_file_handler.write(prov + "\t" + str(location.latitude) + "\t" + str(location.longitude) + '\n')
+    except:
+        logging.error("No lat/long for " + prov)
 
+lat_long_file_handler.close()
