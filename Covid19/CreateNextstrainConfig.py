@@ -27,6 +27,9 @@ quebec_lat_long_obj = os.path.join(os.path.dirname(os.getcwd()),"LatLongObj/queb
 canada_prov_lat_long_obj = os.path.join(os.path.dirname(os.getcwd()),"LatLongObj/canada_prov_lat_long.pkl")
 countries_lat_long_obj = os.path.join(os.path.dirname(os.getcwd()),"LatLongObj/countries_lat_long.pkl")
 
+lat_long_out = os.path.join(os.path.dirname(os.getcwd()),"config/lat_longs.tsv")
+
+
 
 def GetQuebecRTA_LatLong():
 
@@ -83,9 +86,6 @@ def GetCountries_LatLong():
         pickle.dump(COUNTRIES_LAT_LONG,out,-1)
         out.close()
 
-def CreateLatitudesLongitudesFile():
-    out = "config/lat_longs.tsv"
-
 if not os.path.exists(quebec_lat_long_obj):
     GetQuebecRTA_LatLong()
 else:
@@ -102,4 +102,41 @@ else:
     COUNTRIES_LAT_LONG = pickle.load(open(countries_lat_long_obj, "rb"))
 
 
+def WriteQuebecRTA_LatLong(handler):
+    level = Locations.LEVEL['first']
+    
+    for rta in QUEBEC_LAT_LONG.keys():
+        handler.write(level + "\t" + rta + "\t" + str(format(float(QUEBEC_LAT_LONG[rta]['latitude']),'.6f')) + "\t" + str(format(float(QUEBEC_LAT_LONG[rta]['longitude']),'.6f')) + "\n" )
+
+def WriteCanadaProvince_LatLong(handler):
+    level_1 = Locations.LEVEL['first']
+    level_2 = Locations.LEVEL['second']
+
+    for prov in CANADA_PROV_LAT_LONG.keys():
+        handler.write(level_1 + "\t" + prov + "\t" + str(format(float(CANADA_PROV_LAT_LONG[prov]['latitude']),'.6f')) + "\t" + str(format(float(CANADA_PROV_LAT_LONG[prov]['longitude']),'.6f')) + "\n" )
+
+    for prov in CANADA_PROV_LAT_LONG.keys():
+        handler.write(level_2 + "\t" + prov + "\t" + str(format(float(CANADA_PROV_LAT_LONG[prov]['latitude']),'.6f')) + "\t" + str(format(float(CANADA_PROV_LAT_LONG[prov]['longitude']),'.6f')) + "\n" )
+
+
+def WriteContries_LatLong(handler):
+    level_1 = Locations.LEVEL['first']
+    level_3 = Locations.LEVEL['third']
+
+    for country in COUNTRIES_LAT_LONG.keys():
+        handler.write(level_1 + "\t" + country + "\t" + str(format(float(COUNTRIES_LAT_LONG[country]['latitude']),'.6f')) + "\t" + str(format(float(COUNTRIES_LAT_LONG[country]['longitude']),'.6f')) + "\n" )
+
+    for country in COUNTRIES_LAT_LONG.keys():
+        handler.write(level_3 + "\t" + country + "\t" + str(format(float(COUNTRIES_LAT_LONG[country]['latitude']),'.6f')) + "\t" + str(format(float(COUNTRIES_LAT_LONG[country]['longitude']),'.6f')) + "\n" )
+
+def CreateLatitudesLongitudesFile():
+    writer = open(lat_long_out,'w') 
+
+    WriteQuebecRTA_LatLong(handler = writer)
+    WriteCanadaProvince_LatLong(handler = writer)
+    WriteContries_LatLong(handler = writer)
+
+    writer.close()
+
+CreateLatitudesLongitudesFile()
 

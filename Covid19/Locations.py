@@ -1,10 +1,9 @@
 import pypostalcode
 import pycountry
 
-LEVEL = ['RTA', 'Province', 'Country']
+LEVEL = {'first':'rta','second':'province','third':'country'}
  
 pcdb = pypostalcode.PostalCodeDatabase()
-
 
 def GetCanadaRTA():
     CANADA_RTA = []
