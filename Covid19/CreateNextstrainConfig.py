@@ -4,7 +4,6 @@ import logging
 import ssl
 import pgeocode
 import os
-import geopy
 from geopy.geocoders import Nominatim
 
 #voir https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org
@@ -28,8 +27,11 @@ canada_prov_lat_long_obj = os.path.join(os.path.dirname(os.getcwd()),"LatLongObj
 countries_lat_long_obj = os.path.join(os.path.dirname(os.getcwd()),"LatLongObj/countries_lat_long.pkl")
 
 lat_long_out = os.path.join(os.path.dirname(os.getcwd()),"config/lat_longs.tsv")
+ordering_out = os.path.join(os.path.dirname(os.getcwd()),"config/ordering.tsv")
 
-
+level_1 = Locations.LEVEL['first']
+level_2 = Locations.LEVEL['second']
+level_3 = Locations.LEVEL['third']
 
 def GetQuebecRTA_LatLong():
 
@@ -103,14 +105,11 @@ else:
 
 
 def WriteQuebecRTA_LatLong(handler):
-    level = Locations.LEVEL['first']
     
     for rta in QUEBEC_LAT_LONG.keys():
-        handler.write(level + "\t" + rta + "\t" + str(format(float(QUEBEC_LAT_LONG[rta]['latitude']),'.6f')) + "\t" + str(format(float(QUEBEC_LAT_LONG[rta]['longitude']),'.6f')) + "\n" )
+        handler.write(level_1 + "\t" + rta + "\t" + str(format(float(QUEBEC_LAT_LONG[rta]['latitude']),'.6f')) + "\t" + str(format(float(QUEBEC_LAT_LONG[rta]['longitude']),'.6f')) + "\n" )
 
 def WriteCanadaProvince_LatLong(handler):
-    level_1 = Locations.LEVEL['first']
-    level_2 = Locations.LEVEL['second']
 
     for prov in CANADA_PROV_LAT_LONG.keys():
         handler.write(level_1 + "\t" + prov + "\t" + str(format(float(CANADA_PROV_LAT_LONG[prov]['latitude']),'.6f')) + "\t" + str(format(float(CANADA_PROV_LAT_LONG[prov]['longitude']),'.6f')) + "\n" )
@@ -120,8 +119,6 @@ def WriteCanadaProvince_LatLong(handler):
 
 
 def WriteContries_LatLong(handler):
-    level_1 = Locations.LEVEL['first']
-    level_3 = Locations.LEVEL['third']
 
     for country in COUNTRIES_LAT_LONG.keys():
         handler.write(level_1 + "\t" + country + "\t" + str(format(float(COUNTRIES_LAT_LONG[country]['latitude']),'.6f')) + "\t" + str(format(float(COUNTRIES_LAT_LONG[country]['longitude']),'.6f')) + "\n" )
@@ -138,5 +135,32 @@ def CreateLatitudesLongitudesFile():
 
     writer.close()
 
-CreateLatitudesLongitudesFile()
+def WriteRTA(handler):
+    for rta in QUEBEC_LAT_LONG.keys():
+        handler.write(level_1 + "\t" + rta + "\n")
 
+    for prov in CANADA_PROV_LAT_LONG.keys():
+        handler.write(level_1 + "\t" + prov + "\n")
+
+    for country in COUNTRIES_LAT_LONG.keys():
+        handler.write(level_1 + "\t" + country + "\n")
+
+def WriteProvince(handler):
+    for prov in CANADA_PROV_LAT_LONG.keys():
+        handler.write(level_2 + "\t" + prov + "\n")
+
+def WriteCountries(handler):
+    for country in COUNTRIES_LAT_LONG.keys():
+        handler.write(level_3 + "\t" + country + "\n")
+
+def CreateOrderingFile():
+    writer = open(ordering_out,'w')
+    
+    WriteRTA(writer)
+    WriteProvince(writer)
+    WriteCountries(writer)
+
+    writer.close()
+
+CreateLatitudesLongitudesFile()
+CreateOrderingFile()
