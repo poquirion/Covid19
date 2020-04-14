@@ -1,3 +1,8 @@
+"""
+Eric Fournier 2020-04-14
+"""
+
+
 import Locations
 import pickle
 import logging
@@ -6,7 +11,7 @@ import pgeocode
 import os
 from geopy.geocoders import Nominatim
 
-#voir https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org
+#see https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org
 ssl._create_default_https_context = ssl._create_unverified_context
 nomi = pgeocode.Nominatim('ca')
 
