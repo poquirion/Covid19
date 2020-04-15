@@ -1,19 +1,15 @@
+"""
+Eric Fournier 20200415
+"""
+
 import os
 import sys
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 import random
-#from Bio.Seq import MutableSeq
 import logging
 
 logging.basicConfig(level = logging.DEBUG)
-
-
-fasta_in_file =  os.path.join(os.path.dirname(os.getcwd()),"data/gisaid_covid19_usa_1759.fasta")
-fasta_in_file_test =  os.path.join(os.path.dirname(os.getcwd()),"data/three_seq.fasta")
-fasta_out_10seq_homogeneous =  os.path.join(os.path.dirname(os.getcwd()),"data/covid19_10seq_homogeneous.fasta")
-fasta_out_200seq_heterogeneous =  os.path.join(os.path.dirname(os.getcwd()),"data/covid19_200seq_heterogeneous.fasta")
-fasta_out_10seq_heterogeneous =  os.path.join(os.path.dirname(os.getcwd()),"data/covid19_10seq_heterogeneous.fasta")
 
 
 class SeqReader(object):
@@ -64,10 +60,10 @@ class SeqWriter(object):
         SeqIO.write(self.seq_reader.rec_list_out, self.fasta_out,'fasta')
 
 
-seq_reader = SeqReader(fasta_in_file)
-seq_writer = SeqWriter(seq_reader)
+def CreateFastaCovid(fasta_in_file,fasta_out_file,nb_seq,homogeneous):
 
-seq_writer.CreateFastaOut(fasta_out_10seq_heterogeneous,10,False)
-seq_writer.CreateFastaOut(fasta_out_10seq_homogeneous,10,True)
-seq_writer.CreateFastaOut(fasta_out_200seq_heterogeneous,200,True)
+    seq_reader = SeqReader(fasta_in_file)
+    seq_writer = SeqWriter(seq_reader)
+
+    seq_writer.CreateFastaOut(fasta_out_file,nb_seq,homogeneous)
 
