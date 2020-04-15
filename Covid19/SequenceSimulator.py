@@ -1,5 +1,5 @@
 import os
-#import Bio
+import sys
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 import random
@@ -38,6 +38,12 @@ class SeqReader(object):
 
     def BuildRecListOut(self, nb_rec, homogeneous):
         self.BuildRecListIn()
+
+        if nb_rec > self.nb_rec_in:
+            logging.error("Le nombre de sequences choisie est trop grand")
+            sys.exit(0)
+        
+
         if not homogeneous:
             for i in range(1,nb_rec+1):
                 rec = SeqRecord(seq = self.rec_list_in[i].seq, id = "Seq_" + str(i), description = "")
@@ -54,11 +60,12 @@ class SeqWriter(object):
         self.fasta_out = fasta_out
         self.seq_reader.Flush()
 
-        self.seq_reader.BuildRecListOut(nb_seq,homogeneous)        
+        self.seq_reader.BuildRecListOut(nb_seq,homogeneous)       
+         
         SeqIO.write(self.seq_reader.rec_list_out, self.fasta_out,'fasta')
 
 
-seq_reader = SeqReader(fasta_in_file_test)
+seq_reader = SeqReader(fasta_in_file)
 seq_writer = SeqWriter(seq_reader)
 
-seq_writer.CreateFastaOut(fasta_out_10seq_heterogeneous,2,False)
+seq_writer.CreateFastaOut(fasta_out_10seq_heterogeneous,21,False)
