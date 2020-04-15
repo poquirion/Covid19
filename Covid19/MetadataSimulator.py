@@ -84,16 +84,6 @@ class MetadataBuilder(object):
         self.province_list = list(self.location_dict['province'])
         self.country_list = list(self.location_dict['country'])
 
-'''
-    def CreateRandomDateList(self):
-        for j in range(1, 10):
-            time_between_dates = end_date - start_date
-            days_between_dates = time_between_dates.days
-            random_number_of_days = random.randrange(days_between_dates)
-            random_date = start_date + datetime.timedelta(days=random_number_of_days)
-            # print(random_date)
-'''
-
 
 fasta_in_file =  os.path.join(os.path.dirname(os.getcwd()),"data/gisaid_covid19_usa_1759.fasta")
 fasta_in_file_test =  os.path.join(os.path.dirname(os.getcwd()),"data/three_seq.fasta")
