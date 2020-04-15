@@ -9,8 +9,6 @@ import logging
 logging.basicConfig(level = logging.DEBUG)
 
 
-#TODO max selon nb seq in
-
 fasta_in_file =  os.path.join(os.path.dirname(os.getcwd()),"data/gisaid_covid19_usa_1759.fasta")
 fasta_in_file_test =  os.path.join(os.path.dirname(os.getcwd()),"data/three_seq.fasta")
 fasta_out_10seq_homogeneous =  os.path.join(os.path.dirname(os.getcwd()),"data/covid19_10seq_homogeneous.fasta")
@@ -25,7 +23,6 @@ class SeqReader(object):
         self.rec_list_in = []
         self.rec_list_out = []
         self.nb_rec_in = 0
-
 
     def Flush(self):
         self.rec_list_in = []
@@ -43,14 +40,16 @@ class SeqReader(object):
             logging.error("Le nombre de sequences choisie est trop grand")
             sys.exit(0)
         
-
         if not homogeneous:
-            for i in range(1,nb_rec+1):
+            for i in range(1,nb_rec + 1):
                 rec = SeqRecord(seq = self.rec_list_in[i].seq, id = "Seq_" + str(i), description = "")
                 self.rec_list_out.append(rec)
         else:
-            pass
- 
+            single_rec = self.rec_list_in[0]
+            for i in range(1, nb_rec + 1): 
+                rec = SeqRecord(seq = single_rec.seq, id = "Seq_" + str(i), description = "")
+                self.rec_list_out.append(rec) 
+
 class SeqWriter(object):
     def __init__(self,seq_reader):
         self.fasta_out = ""
@@ -68,4 +67,7 @@ class SeqWriter(object):
 seq_reader = SeqReader(fasta_in_file)
 seq_writer = SeqWriter(seq_reader)
 
-seq_writer.CreateFastaOut(fasta_out_10seq_heterogeneous,21,False)
+seq_writer.CreateFastaOut(fasta_out_10seq_heterogeneous,10,False)
+seq_writer.CreateFastaOut(fasta_out_10seq_homogeneous,10,True)
+seq_writer.CreateFastaOut(fasta_out_200seq_heterogeneous,200,True)
+
