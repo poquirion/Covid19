@@ -303,7 +303,7 @@ rule traits:
     output:
         node_data = "results/traits.json",
     params:
-        columns = "rta_exposure",
+        columns = "country_exposure",
         sampling_bias_correction = 2.5
     shell:
         """
