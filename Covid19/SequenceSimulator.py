@@ -20,6 +20,9 @@ class SeqReader(object):
         self.rec_list_out = []
         self.nb_rec_in = 0
 
+        self.rec_id_list = []
+        self.rec_len_list = []
+
     def Flush(self):
         self.rec_list_in = []
         self.rec_list_out = []
@@ -38,13 +41,21 @@ class SeqReader(object):
         
         if not homogeneous:
             for i in range(1,nb_rec + 1):
-                rec = SeqRecord(seq = self.rec_list_in[i].seq, id = "Seq_" + str(i), description = "")
+                new_id = "Seq_" + str(i)
+                rec = SeqRecord(seq = self.rec_list_in[i].seq, id = new_id, description = "")
+                rec_len = str(len(rec.seq))
                 self.rec_list_out.append(rec)
+                self.rec_id_list.append(new_id)
+                self.rec_len_list.append(rec_len)
         else:
             single_rec = self.rec_list_in[0]
-            for i in range(1, nb_rec + 1): 
-                rec = SeqRecord(seq = single_rec.seq, id = "Seq_" + str(i), description = "")
-                self.rec_list_out.append(rec) 
+            for i in range(1, nb_rec + 1):
+                new_id = "Seq_" + str(i)
+                rec = SeqRecord(seq = single_rec.seq, id = new_id, description = "")
+                rec_len = str(len(rec.seq))
+                self.rec_list_out.append(rec)
+                self.rec_id_list.append(new_id) 
+                self.rec_len_list.append(rec_len)
 
 class SeqWriter(object):
     def __init__(self,seq_reader):
@@ -66,4 +77,4 @@ def CreateFastaCovid(fasta_in_file,fasta_out_file,nb_seq,homogeneous):
     seq_writer = SeqWriter(seq_reader)
 
     seq_writer.CreateFastaOut(fasta_out_file,nb_seq,homogeneous)
-
+    return((seq_writer.seq_reader.rec_id_list,seq_writer.seq_reader.rec_len_list))
