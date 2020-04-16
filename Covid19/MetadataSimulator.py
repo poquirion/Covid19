@@ -47,7 +47,7 @@ class MetadataBuilder(object):
         self.is_homogegneous = is_homogeneous
         self.metadata = metadata
 
-        self.header = {'Strain' : 'strain', 'Virus' : 'virus', 'Date' : 'date' ,'Rta' : 'rta', 'CountryExposure' : 'coutry_exposure',
+        self.header = {'Strain' : 'strain', 'Virus' : 'virus', 'Date' : 'date' ,'Rta' : 'rta', 'CountryExposure' : 'country_exposure',
         'ProvinceExposure' : 'province_exposure', 'Rta_exposure' : 'rta_exposure', 'Segment' : 'segment', 'Length' : 'length',
         'Host' : 'host', 'Age' : 'age', 'Sex' : 'sex', 'LabOrig' : 'originating_lab', 'LabSubmt' : 'submitting_lab', 'Authors' : 'authors',
         'Url' : 'url', 'Title' : 'title'}
@@ -91,7 +91,7 @@ class MetadataBuilder(object):
 
     def CreateMetadataFile(self):
         with open(self.metadata,'w') as metadata_handle:
-            metadata_handle.write(self.header['Strain'] + "\t" + self.header['Date'] + "\t" + self.header['Virus'] + "\t" + self.header['Rta'] +
+            metadata_handle.write(self.header['Strain'] + "\t" + self.header['Virus'] + "\t" + self.header['Date'] + "\t" + self.header['Rta'] +
             "\t" + self.header['CountryExposure'] + "\t" + self.header['ProvinceExposure'] + "\t" + self.header['Rta_exposure'] +
             "\t" + self.header['Segment'] + "\t" + self.header['Length'] + "\t" + self.header['Host'] + "\t" + self.header['Age'] +
             "\t" + self.header['Sex'] + "\t" + self.header['LabOrig'] + "\t" + self.header['LabSubmt'] + "\t" + self.header['Authors'] +
@@ -101,8 +101,8 @@ class MetadataBuilder(object):
 
             for strain in self.strain_list:
                 metadata_handle.write(strain + "\t")
-                metadata_handle.write(self.random_date_list[index] + "\t")
                 metadata_handle.write(self.static_data['virus'] + "\t")
+                metadata_handle.write(self.random_date_list[index] + "\t")
                 metadata_handle.write(self.random_rta_list[index] + "\t")
                 metadata_handle.write(self.random_country_list[index] + "\t")
                 metadata_handle.write(self.random_province_list[index] + "\t")
@@ -116,20 +116,25 @@ class MetadataBuilder(object):
                 metadata_handle.write(self.static_data['submitting_lab'] + "\t")
                 metadata_handle.write(self.static_data['authors'] + "\t")
                 metadata_handle.write(self.static_data['url'] + "\t")
-                metadata_handle.write(self.static_data['title'] + "\t")
+                metadata_handle.write(self.static_data['title'])
                 metadata_handle.write('\n')
 
                 index += 1
 
 
 fasta_in_file =  os.path.join(os.path.dirname(os.getcwd()),"data/gisaid_covid19_usa_1759.fasta")
-#fasta_in_file_test =  os.path.join(os.path.dirname(os.getcwd()),"data/three_seq.fasta")
-fasta_out_10seq_homogeneous =  os.path.join(os.path.dirname(os.getcwd()),"data/covid19_10seq_homogeneous.fasta")
-fasta_out_200seq_heterogeneous =  os.path.join(os.path.dirname(os.getcwd()),"data/covid19_200seq_heterogeneous.fasta")
-fasta_out_10seq_heterogeneous =  os.path.join(os.path.dirname(os.getcwd()),"data/covid19_10seq_heterogeneous.fasta")
+
+#fasta_out =  os.path.join(os.path.dirname(os.getcwd()),"data/covid19_10seq_homogeneous.fasta")
+#metadata_file = os.path.join(os.path.dirname(os.getcwd()),"data/metadata_10seq_homogeneous.tsv")
+
+#fasta_out =  os.path.join(os.path.dirname(os.getcwd()),"data/covid19_250seq_heterogeneous.fasta")
+#metadata_file = os.path.join(os.path.dirname(os.getcwd()),"data/metadata_250seq_heterogeneous.tsv")
+
+fasta_out =  os.path.join(os.path.dirname(os.getcwd()),"data/covid19_10seq_heterogeneous.fasta")
+metadata_file = os.path.join(os.path.dirname(os.getcwd()),"data/metadata_10seq_heterogeneous.tsv")
+
 number_of_isolate = 10
 is_homogeneous_seq = False
-metadata_file = os.path.join(os.path.dirname(os.getcwd()),"data/metadata.tsv")
 
-mbuilder = MetadataBuilder(number_of_isolate, is_homogeneous_seq, fasta_in_file, fasta_out_10seq_heterogeneous, metadata_file)
+mbuilder = MetadataBuilder(number_of_isolate, is_homogeneous_seq, fasta_in_file, fasta_out, metadata_file)
 mbuilder.CreateMetadataFile()
