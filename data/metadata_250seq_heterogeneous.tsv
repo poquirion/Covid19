@@ -1,0 +1,251 @@
+strain	virus	date	rta	country_exposure	province_exposure	rta_exposure	segment	length	host	age	sex	originating_lab	submitting_lab	authors	url	title
+Seq_1	ncov	2019-10-02	J3X	Azerbaijan	Yukon	J3X	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_2	ncov	2020-05-23	G9T	Philippines	British Columbia	J8P	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_3	ncov	2018-03-22	J2R	Luxembourg	New Brunswick	J1E	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_4	ncov	2019-05-22	G7Y	Seychelles	British Columbia	H3K	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_5	ncov	2018-11-10	G0C	Saint Helena, Ascension and Tristan da Cunha	Northwest Territory	H3M	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_6	ncov	2019-02-19	J6S	Hungary	Nova Scotia	H9S	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_7	ncov	2020-02-27	H9R	Trinidad and Tobago	Ontario	G3E	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_8	ncov	2018-02-20	G5Z	Austria	Manitoba	J7N	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_9	ncov	2019-12-21	H3C	Gabon	Alberta	G9X	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_10	ncov	2018-11-20	J1Z	Benin	British Columbia	J0E	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_11	ncov	2018-10-14	H2N	French Polynesia	Prince Edward Island	J0H	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_12	ncov	2018-11-21	H1X	Romania	Northwest Territory	J0P	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_13	ncov	2020-07-22	J6V	Congo	Saskatchewan	G5Y	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_14	ncov	2018-02-13	J4G	Iran, Islamic Republic of	Saskatchewan	H7A	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_15	ncov	2018-06-20	J4R	Ireland	Alberta	H7B	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_16	ncov	2019-04-14	H3X	Azerbaijan	Alberta	G6R	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_17	ncov	2019-01-30	H3C	Indonesia	Northwest Territory	H7N	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_18	ncov	2018-06-28	H7W	Benin	Newfoundland and Labrador	G5X	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_19	ncov	2019-12-24	J2N	Zimbabwe	British Columbia	H1K	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_20	ncov	2018-12-28	H3J	Mauritius	Quebec	J0B	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_21	ncov	2018-07-12	J8P	Congo	British Columbia	H4M	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_22	ncov	2020-01-03	J7J	Slovakia	Northwest Territory	G8V	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_23	ncov	2018-05-24	J7L	North Macedonia	Quebec	J6J	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_24	ncov	2020-07-29	H4X	Greenland	British Columbia	G5C	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_25	ncov	2019-10-25	J2S	Antarctica	Newfoundland and Labrador	H4W	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_26	ncov	2020-02-26	H1J	Turkey	Saskatchewan	H4R	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_27	ncov	2018-08-07	H4Y	French Southern Territories	Manitoba	J6N	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_28	ncov	2019-06-24	G5A	Bahamas	New Brunswick	H3P	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_29	ncov	2019-12-15	H7T	Gabon	Yukon	H1X	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_30	ncov	2020-08-23	J0Z	Cuba	Yukon	G7B	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_31	ncov	2018-02-08	J7Z	Guam	Nova Scotia	J2G	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_32	ncov	2018-10-17	G2J	Ireland	Newfoundland and Labrador	G1W	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_33	ncov	2018-12-25	H7B	Isle of Man	New Brunswick	J4S	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_34	ncov	2019-04-05	H1G	Bosnia and Herzegovina	British Columbia	J0Z	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_35	ncov	2018-08-05	H3X	Belize	Ontario	G0W	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_36	ncov	2018-05-28	H2N	Egypt	Manitoba	J2Y	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_37	ncov	2020-08-26	G1P	Saudi Arabia	British Columbia	H2Y	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_38	ncov	2020-04-16	J7C	Zambia	Ontario	H1C	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_39	ncov	2018-12-11	G2B	Nauru	Saskatchewan	J1H	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_40	ncov	2020-01-19	G6T	Eswatini	Yukon	H4W	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_41	ncov	2019-11-08	H8Z	Guam	Yukon	H2R	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_42	ncov	2019-02-28	J8N	Guadeloupe	Manitoba	J8V	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_43	ncov	2018-05-06	J3T	Haiti	British Columbia	J0R	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_44	ncov	2018-12-25	G9H	South Sudan	British Columbia	G8G	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_45	ncov	2020-04-09	J0A	Libya	Northwest Territory	H9H	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_46	ncov	2018-04-19	J0N	Heard Island and McDonald Islands	Alberta	J2H	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_47	ncov	2018-12-28	G9N	Costa Rica	Northwest Territory	G5T	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_48	ncov	2018-06-11	H4J	Malaysia	Alberta	G0R	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_49	ncov	2019-03-12	H4W	Cambodia	Prince Edward Island	J1H	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_50	ncov	2018-04-26	J1K	Iran, Islamic Republic of	Yukon	J1H	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_51	ncov	2020-10-17	H3S	Virgin Islands, British	Northwest Territory	G6K	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_52	ncov	2018-01-26	H3S	Egypt	Manitoba	G6S	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_53	ncov	2019-07-20	J7G	Malaysia	Yukon	G8C	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_54	ncov	2019-03-18	J9E	Libya	Newfoundland and Labrador	G2E	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_55	ncov	2018-04-11	J8P	Hungary	Yukon	J0H	genome	29610	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_56	ncov	2018-02-05	J5B	Croatia	Newfoundland and Labrador	G7S	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_57	ncov	2019-05-11	J6K	Antarctica	British Columbia	J7Z	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_58	ncov	2020-03-05	H7E	Tuvalu	Yukon	J8X	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_59	ncov	2018-07-11	H2A	Mali	Quebec	J9J	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_60	ncov	2019-05-14	H3W	Saint Kitts and Nevis	Alberta	J6R	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_61	ncov	2020-02-28	J7E	Zimbabwe	Saskatchewan	J4Y	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_62	ncov	2018-04-10	J5X	Monaco	Quebec	G1V	genome	29563	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_63	ncov	2020-03-15	G1N	Thailand	Northwest Territory	G0H	genome	29611	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_64	ncov	2018-05-17	H2H	Sierra Leone	British Columbia	H7B	genome	29612	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_65	ncov	2019-07-13	H2X	Russian Federation	Nova Scotia	G6G	genome	29613	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_66	ncov	2020-01-06	J8L	Namibia	Prince Edward Island	G5N	genome	29611	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_67	ncov	2018-01-20	G7A	Kazakhstan	Prince Edward Island	G6P	genome	29785	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_68	ncov	2019-05-27	H9C	Bonaire, Sint Eustatius and Saba	Alberta	H7S	genome	29866	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_69	ncov	2019-12-06	J0C	Panama	New Brunswick	G8C	genome	29891	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_70	ncov	2019-06-24	J5R	Suriname	Ontario	J8A	genome	29866	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_71	ncov	2020-01-04	J7L	Åland Islands	Manitoba	J9J	genome	29886	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_72	ncov	2018-07-06	G0B	Gambia	Alberta	G2L	genome	29860	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_73	ncov	2018-12-17	J0G	Malawi	Newfoundland and Labrador	G8L	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_74	ncov	2018-03-10	J1T	Western Sahara	Manitoba	G5T	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_75	ncov	2018-01-18	J5Y	Croatia	Nova Scotia	J5M	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_76	ncov	2018-12-30	J7T	Yemen	Alberta	J8V	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_77	ncov	2018-09-14	H2L	Comoros	Northwest Territory	J3V	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_78	ncov	2019-10-25	J2L	Austria	Ontario	J6K	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_79	ncov	2018-05-24	H4Y	Mayotte	Quebec	H4G	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_80	ncov	2020-01-28	G9H	Guyana	Nova Scotia	H8P	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_81	ncov	2019-07-18	H3R	Bahamas	Saskatchewan	G6E	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_82	ncov	2020-05-02	J8L	Greece	Prince Edward Island	G8V	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_83	ncov	2020-09-12	G4T	Grenada	British Columbia	H7A	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_84	ncov	2020-05-19	H9H	Central African Republic	Yukon	H8Y	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_85	ncov	2020-05-12	G3A	Fiji	Prince Edward Island	G5H	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_86	ncov	2020-08-10	G5M	Venezuela, Bolivarian Republic of	Nova Scotia	H7N	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_87	ncov	2020-05-25	J9E	Bermuda	Saskatchewan	H1L	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_88	ncov	2019-03-24	J0G	Sweden	Saskatchewan	J7V	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_89	ncov	2018-03-16	H1M	Solomon Islands	New Brunswick	J9J	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_90	ncov	2020-04-04	J0E	Western Sahara	Newfoundland and Labrador	J2T	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_91	ncov	2019-04-30	G4X	Turkey	Saskatchewan	G9N	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_92	ncov	2019-06-18	H2S	Malawi	Newfoundland and Labrador	J8C	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_93	ncov	2019-03-15	H5A	British Indian Ocean Territory	Ontario	G6W	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_94	ncov	2018-09-27	H2A	Hong Kong	Prince Edward Island	J8A	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_95	ncov	2018-10-25	J0M	Ireland	Yukon	H3N	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_96	ncov	2018-05-03	J3R	Hungary	Quebec	H8Z	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_97	ncov	2019-07-27	J0J	Pakistan	Yukon	J8R	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_98	ncov	2020-03-06	G3E	Bosnia and Herzegovina	Prince Edward Island	H3M	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_99	ncov	2020-06-18	J6N	Belize	Yukon	H2P	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_100	ncov	2018-09-19	H2P	Senegal	Prince Edward Island	J6S	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_101	ncov	2019-01-16	J9P	Cocos (Keeling) Islands	Ontario	J4B	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_102	ncov	2018-12-01	H7W	Estonia	Newfoundland and Labrador	J2X	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_103	ncov	2019-06-01	J2E	Panama	Northwest Territory	J2X	genome	29639	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_104	ncov	2019-10-18	J5M	Saudi Arabia	Yukon	J9Y	genome	29861	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_105	ncov	2020-05-20	J4V	Nauru	Yukon	G9T	genome	29654	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_106	ncov	2019-08-22	J9A	Aruba	Yukon	J8T	genome	29765	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_107	ncov	2020-03-29	H2N	Guinea-Bissau	Ontario	J1J	genome	29836	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_108	ncov	2019-01-17	H3H	Anguilla	Saskatchewan	G3M	genome	29737	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_109	ncov	2019-01-05	G1M	Barbados	Newfoundland and Labrador	H3V	genome	29532	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_110	ncov	2018-02-08	J0V	Mayotte	Nova Scotia	H2X	genome	29871	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_111	ncov	2020-07-05	J2C	Djibouti	Northwest Territory	J4P	genome	29734	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_112	ncov	2020-04-29	H9E	Philippines	Manitoba	J6T	genome	29863	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_113	ncov	2020-02-13	J5A	Eritrea	Manitoba	H7E	genome	29874	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_114	ncov	2018-06-17	J4L	Curaçao	British Columbia	J1J	genome	29758	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_115	ncov	2019-04-01	J4N	Haiti	Manitoba	J3A	genome	29744	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_116	ncov	2018-07-25	J2C	Cambodia	Alberta	G2B	genome	29876	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_117	ncov	2020-05-20	J0E	Canada	Alberta	G5A	genome	29725	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_118	ncov	2018-11-23	H7R	Albania	New Brunswick	J6W	genome	29817	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_119	ncov	2019-02-23	J9B	Mexico	Saskatchewan	J9V	genome	29777	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_120	ncov	2018-11-11	G8B	Panama	Quebec	J7J	genome	29538	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_121	ncov	2019-05-26	G0Z	Norway	Alberta	G8G	genome	29404	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_122	ncov	2019-12-04	J2J	Mongolia	Quebec	J4B	genome	29787	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_123	ncov	2020-10-04	G6E	Mayotte	Saskatchewan	H7G	genome	29617	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_124	ncov	2018-02-21	J8C	Mauritius	British Columbia	J0W	genome	29395	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_125	ncov	2020-08-16	H7R	Bahamas	Northwest Territory	H9P	genome	29880	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_126	ncov	2020-10-23	J0C	Cameroon	Northwest Territory	J3Z	genome	29749	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_127	ncov	2018-06-21	G1P	Israel	Alberta	H4V	genome	29833	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_128	ncov	2019-03-10	J7M	Central African Republic	Alberta	G6L	genome	29890	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_129	ncov	2019-05-11	G9T	Brazil	Newfoundland and Labrador	J1K	genome	29711	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_130	ncov	2020-02-22	H3N	Eswatini	New Brunswick	J9L	genome	29842	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_131	ncov	2020-09-23	J4X	Burkina Faso	Saskatchewan	J7Y	genome	29851	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_132	ncov	2018-09-11	J7C	Albania	Northwest Territory	J3Y	genome	29872	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_133	ncov	2020-08-08	J7C	Comoros	Saskatchewan	J8E	genome	29853	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_134	ncov	2019-05-18	J5K	Niue	Quebec	J3G	genome	29856	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_135	ncov	2018-07-30	J1G	Anguilla	British Columbia	J6J	genome	29795	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_136	ncov	2019-03-07	G8P	Denmark	Newfoundland and Labrador	J3R	genome	29638	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_137	ncov	2020-07-16	J5Z	Malta	Saskatchewan	J7G	genome	29854	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_138	ncov	2020-02-25	H4E	Senegal	Newfoundland and Labrador	J7X	genome	29878	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_139	ncov	2019-01-29	J7B	Egypt	British Columbia	H1Y	genome	29776	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_140	ncov	2018-09-20	J1J	Madagascar	Quebec	G1R	genome	29830	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_141	ncov	2020-01-01	H1C	Kyrgyzstan	Ontario	G5B	genome	29772	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_142	ncov	2019-02-25	H4J	Burkina Faso	British Columbia	H7R	genome	29899	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_143	ncov	2018-06-15	G1P	Peru	Alberta	H1L	genome	29759	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_144	ncov	2020-01-07	G4W	Northern Mariana Islands	Yukon	G3G	genome	29730	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_145	ncov	2020-07-28	G7Z	Azerbaijan	Yukon	J3P	genome	29870	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_146	ncov	2019-07-07	G2M	Palestine, State of	Prince Edward Island	G0T	genome	29793	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_147	ncov	2018-08-23	G0T	Jamaica	New Brunswick	G6G	genome	29534	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_148	ncov	2020-06-30	H4W	India	Yukon	H4M	genome	29854	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_149	ncov	2019-03-09	H9H	Réunion	Northwest Territory	J5L	genome	29777	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_150	ncov	2020-01-26	H7G	United Kingdom	Prince Edward Island	G4W	genome	29773	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_151	ncov	2018-11-19	J6J	Brazil	British Columbia	J5V	genome	30086	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_152	ncov	2018-06-16	J2H	Rwanda	Manitoba	G0H	genome	29734	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_153	ncov	2018-08-26	G9H	Australia	Ontario	G2C	genome	29598	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_154	ncov	2018-12-02	H4W	Morocco	New Brunswick	G8H	genome	29643	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_155	ncov	2020-09-14	H1E	United Arab Emirates	Alberta	J7H	genome	29885	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_156	ncov	2019-12-24	J5A	North Macedonia	Quebec	H1X	genome	29842	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_157	ncov	2018-09-17	J5W	Tonga	British Columbia	H2V	genome	29808	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_158	ncov	2018-11-04	J6Y	Guinea	Manitoba	G5A	genome	29868	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_159	ncov	2020-03-22	G1Y	South Georgia and the South Sandwich Islands	Saskatchewan	J3L	genome	29652	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_160	ncov	2018-03-31	G0K	Burkina Faso	Yukon	G3K	genome	29754	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_161	ncov	2018-07-22	G1H	Gambia	Nova Scotia	G4X	genome	29873	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_162	ncov	2018-08-18	G8N	Cameroon	Quebec	G7H	genome	29861	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_163	ncov	2018-04-25	G0N	Guinea-Bissau	New Brunswick	J8B	genome	29867	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_164	ncov	2018-11-07	J7H	South Georgia and the South Sandwich Islands	Yukon	H7K	genome	29859	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_165	ncov	2019-01-03	H2T	Belarus	Prince Edward Island	G2M	genome	29876	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_166	ncov	2018-03-16	G1C	Israel	Ontario	G4A	genome	29730	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_167	ncov	2020-10-27	H8S	Congo, The Democratic Republic of the	British Columbia	H2L	genome	29771	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_168	ncov	2020-08-16	G3G	Poland	Northwest Territory	G3L	genome	29892	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_169	ncov	2020-05-26	G4S	Spain	Newfoundland and Labrador	G5M	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_170	ncov	2019-11-14	G7G	South Africa	Quebec	G7N	genome	29853	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_171	ncov	2019-05-22	J2L	Pitcairn	Ontario	G6J	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_172	ncov	2019-01-24	J2N	Ukraine	Quebec	H3A	genome	29451	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_173	ncov	2018-09-03	G6V	Mozambique	Quebec	J5J	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_174	ncov	2020-07-08	H8R	Togo	Newfoundland and Labrador	H2R	genome	29833	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_175	ncov	2019-06-12	J2X	Falkland Islands (Malvinas)	New Brunswick	H1B	genome	29871	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_176	ncov	2020-04-14	J0X	Brazil	Newfoundland and Labrador	J3Y	genome	29902	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_177	ncov	2018-01-01	J4B	Japan	New Brunswick	H4Z	genome	29627	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_178	ncov	2018-01-11	H7J	Kiribati	Newfoundland and Labrador	G6S	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_179	ncov	2020-04-23	J3R	Western Sahara	Northwest Territory	J7L	genome	29777	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_180	ncov	2019-09-04	H9C	Ukraine	Prince Edward Island	G9P	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_181	ncov	2019-01-04	G4A	Saint Lucia	New Brunswick	J2Y	genome	29600	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_182	ncov	2019-01-27	J9E	Belgium	Prince Edward Island	H4Z	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_183	ncov	2020-08-01	G4X	Morocco	Prince Edward Island	G8K	genome	29746	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_184	ncov	2018-12-11	H5A	Maldives	Yukon	G8H	genome	29549	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_185	ncov	2019-04-13	J8X	New Caledonia	Saskatchewan	J1N	genome	29867	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_186	ncov	2018-07-11	G0J	Slovakia	Alberta	G1W	genome	29801	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_187	ncov	2018-12-16	J8G	Bulgaria	Alberta	H3C	genome	29820	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_188	ncov	2019-02-22	H9J	Equatorial Guinea	Newfoundland and Labrador	J1Z	genome	29792	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_189	ncov	2019-02-11	G8A	Barbados	New Brunswick	J4R	genome	29440	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_190	ncov	2020-01-12	G1R	Svalbard and Jan Mayen	Prince Edward Island	G2E	genome	29461	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_191	ncov	2018-11-04	H4S	South Africa	British Columbia	H4C	genome	29747	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_192	ncov	2018-03-18	J2J	Brunei Darussalam	Manitoba	G7G	genome	29778	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_193	ncov	2018-04-21	H0H	Spain	Ontario	J6Z	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_194	ncov	2018-03-13	H2H	Kyrgyzstan	Quebec	G6T	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_195	ncov	2019-09-21	G1X	Malaysia	Alberta	G8V	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_196	ncov	2019-12-25	J3A	Angola	Newfoundland and Labrador	H2W	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_197	ncov	2020-05-11	H3B	Sao Tome and Principe	Alberta	H1Z	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_198	ncov	2019-03-12	J4X	Japan	British Columbia	G1A	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_199	ncov	2020-05-01	J3A	Austria	Nova Scotia	H9R	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_200	ncov	2018-07-01	J8N	Russian Federation	Quebec	J9P	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_201	ncov	2019-10-11	H7V	Luxembourg	Saskatchewan	J7R	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_202	ncov	2020-10-06	J3X	Trinidad and Tobago	Alberta	J7P	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_203	ncov	2018-08-08	H7B	Turkmenistan	Northwest Territory	G3H	genome	29686	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_204	ncov	2018-03-02	H2N	Congo, The Democratic Republic of the	Northwest Territory	H8P	genome	29868	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_205	ncov	2020-03-14	G0C	Portugal	Yukon	J9X	genome	29647	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_206	ncov	2019-02-03	G3E	Mauritius	Ontario	J2Y	genome	29766	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_207	ncov	2018-10-21	J2E	Pitcairn	Ontario	H3P	genome	29862	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_208	ncov	2019-04-05	H7K	Seychelles	Manitoba	G8K	genome	29695	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_209	ncov	2020-03-31	H2E	Spain	Ontario	H7L	genome	29794	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_210	ncov	2019-02-23	G0Z	Mexico	Nova Scotia	J7V	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_211	ncov	2018-01-15	J9T	Cabo Verde	Saskatchewan	G5T	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_212	ncov	2020-08-12	G8A	Burundi	Quebec	G1S	genome	29739	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_213	ncov	2020-09-25	G9R	Taiwan, Province of China	Manitoba	J4X	genome	29897	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_214	ncov	2019-07-26	H1A	Saint Helena, Ascension and Tristan da Cunha	Nova Scotia	G0G	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_215	ncov	2018-02-23	G1R	Norway	Ontario	H7H	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_216	ncov	2020-10-20	H2V	Comoros	Alberta	J9H	genome	29864	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_217	ncov	2018-11-12	J3N	Mongolia	Quebec	G0R	genome	29832	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_218	ncov	2018-09-14	J8R	Armenia	British Columbia	J5R	genome	29888	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_219	ncov	2020-02-04	G7J	Spain	Yukon	H8T	genome	29444	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_220	ncov	2019-09-17	J7E	New Caledonia	British Columbia	J5L	genome	29790	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_221	ncov	2018-09-17	G0K	Saint Vincent and the Grenadines	Ontario	H7A	genome	29895	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_222	ncov	2020-10-18	H2Z	Peru	Ontario	H2X	genome	29837	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_223	ncov	2019-09-07	J9Y	Paraguay	Saskatchewan	G1G	genome	29861	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_224	ncov	2018-02-09	G1P	Ireland	Newfoundland and Labrador	H4B	genome	29856	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_225	ncov	2020-08-30	G7X	Greenland	Prince Edward Island	J6Z	genome	29828	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_226	ncov	2020-04-17	J7V	Togo	British Columbia	H2V	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_227	ncov	2019-01-02	J7E	Barbados	Newfoundland and Labrador	H4W	genome	29872	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_228	ncov	2019-02-06	G5B	Colombia	Alberta	J2B	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_229	ncov	2020-06-09	G8B	Burundi	Quebec	J8X	genome	29902	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_230	ncov	2020-04-03	J3R	United Kingdom	Manitoba	J3N	genome	29891	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_231	ncov	2018-02-02	H1S	Fiji	Newfoundland and Labrador	J4N	genome	29898	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_232	ncov	2019-09-19	G5B	French Southern Territories	Northwest Territory	J4G	genome	29893	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_233	ncov	2018-01-05	H4J	Central African Republic	British Columbia	H2H	genome	29873	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_234	ncov	2018-06-07	G5Y	Malaysia	Northwest Territory	J4K	genome	29867	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_235	ncov	2020-08-07	G5B	Malta	Newfoundland and Labrador	J2Y	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_236	ncov	2018-05-25	J7A	Yemen	Ontario	J1K	genome	29873	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_237	ncov	2018-12-19	J8T	French Guiana	Manitoba	H1Z	genome	29873	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_238	ncov	2018-01-19	H7N	Azerbaijan	Newfoundland and Labrador	H3J	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_239	ncov	2019-09-07	G0W	Bhutan	Manitoba	H5B	genome	29876	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_240	ncov	2019-07-05	H4T	Colombia	New Brunswick	J7Y	genome	29901	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_241	ncov	2019-09-26	J1N	Peru	Alberta	G2G	genome	29872	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_242	ncov	2019-07-10	G6C	Andorra	Northwest Territory	G1K	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_243	ncov	2020-06-04	G0E	Belize	Alberta	H7L	genome	29844	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_244	ncov	2019-04-25	G3H	Albania	Saskatchewan	G9H	genome	29865	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_245	ncov	2019-01-22	H4V	Mexico	Northwest Territory	H4X	genome	29841	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_246	ncov	2018-02-04	G1S	Viet Nam	Saskatchewan	J4W	genome	29843	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_247	ncov	2019-06-30	H3L	Guinea-Bissau	Nova Scotia	J9H	genome	29843	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_248	ncov	2019-12-31	H2H	Bonaire, Sint Eustatius and Saba	Manitoba	J8X	genome	30114	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_249	ncov	2019-11-25	J7N	El Salvador	Saskatchewan	J7P	genome	29869	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_250	ncov	2019-09-01	J5W	Western Sahara	Yukon	J0Z	genome	29870	human	30	Male	Labx	Laby	Somebody	NA	NA

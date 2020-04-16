@@ -1,0 +1,11 @@
+strain	virus	date	rta	country_exposure	province_exposure	rta_exposure	segment	length	host	age	sex	originating_lab	submitting_lab	authors	url	title
+Seq_1	ncov	2020-08-06	H9X	Heard Island and McDonald Islands	Ontario	H8Z	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_2	ncov	2019-01-15	H4Z	Bahrain	Yukon	H9R	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_3	ncov	2019-12-29	H9E	Micronesia, Federated States of	Ontario	G8P	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_4	ncov	2019-07-18	G2M	United States	Yukon	H2V	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_5	ncov	2018-07-24	G4A	Greece	Prince Edward Island	H9A	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_6	ncov	2020-04-11	J2K	Poland	Prince Edward Island	G5H	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_7	ncov	2018-09-19	H7J	Christmas Island	Manitoba	H3L	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_8	ncov	2019-10-04	H3N	Solomon Islands	Saskatchewan	G0T	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_9	ncov	2018-08-17	G6A	Norfolk Island	Alberta	J3T	genome	29903	human	30	Male	Labx	Laby	Somebody	NA	NA
+Seq_10	ncov	2020-04-11	J8R	Saint Kitts and Nevis	Yukon	J0E	genome	29882	human	30	Male	Labx	Laby	Somebody	NA	NA

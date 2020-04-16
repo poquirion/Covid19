@@ -1,0 +1,15 @@
+strain	virus	date	rta	country_exposure	province_exposure	rta_exposure	segment	length	host	age	sex	originating_lab	submitting_lab	authors	url	title
+Canada/QC_1/2020	ncov	2020-04-01	J7E	Canada	Manitoba	J7F	genome	29903	Human	60	Male	BCCDC Public Health Laboratory	BCCDC Public Health Laboratory	Harrigan et al	https://www.gisaid.org	?
+Canada/QC_2/2020	ncov	2019-03-13	G0A	Australia	Manitoba	J8G	genome	29903	Human	33	Male	BCCDC Public Health Laboratory	BCCDC Public Health Laboratory	Harrigan et al	https://www.gisaid.org	?
+Canada/QC_3/2020	ncov	2020-03-13	J7E	Australia	Quebec	J7R	genome	29903	Human	72	Female	BCCDC Public Health Laboratory	BCCDC Public Health Laboratory	Harrigan et al	https://www.gisaid.org	?
+Canada/QC_4/2020	ncov	2020-01-13	J7E	Benin	Quebec	J7E	genome	29782	Human	?	?	Cadham Provincial Laboratory	National Microbiology Laboratory	Majer et al	https://www.gisaid.org	?
+Canada/QC_5/2020	ncov	2020-01-12	H2E	Bulgaria	Quebec	H2E	genome	29782	Human	?	?	Cadham Provincial Laboratory	National Microbiology Laboratory	Majer et al	https://www.gisaid.org	?
+Canada/QC_6/2020	ncov	2020-03-13	H2J	Canada	Nova Scotia	J5L	genome	29782	Human	?	?	Queen Elizabeth II Health Science Centre	National Microbiology Laboratory	Majer et al	https://www.gisaid.org	?
+Canada/QC_7/2020	ncov	2020-03-25	H4N	Canada	Saskatchewan	H4N	genome	29851	Human	56	Male	Public Health Ontario Laboratory	Ontario Agency for Health Protection and Promotion (OAHPP)	Eshaghi et al	https://www.gisaid.org	?
+Canada/QC_8/2020	ncov	2019-12-11	H4Z	Brazil	Quebec	H4Z	genome	29882	Human	50	Female	Public Health Ontario Laboratories	Public Health Ontario Laboratories	Eshaghi et al	https://www.gisaid.org	?
+Canada/QC_9/2020	ncov	2020-02-29	H5B	China	Quebec	H5B	genome	29882	Human	70	Female	Public Health Ontario Laboratories	Public Health Ontario Laboratories	Eshaghi et al	https://www.gisaid.org	?
+Canada/QC_10/2020	ncov	2020-03-09	J0A	China	Manitoba	H5B	genome	29782	Human	?	?	Roy Romanow Provincial Laboratory	National Microbiology Laboratory	Majer et al	https://www.gisaid.org	?
+Canada/QC_11/2020	ncov	2020-03-09	J0C	China	Manitoba	H5B	genome	29782	Human	?	?	Roy Romanow Provincial Laboratory	National Microbiology Laboratory	Majer et al	https://www.gisaid.org	?
+Canada/QC_12/2020	ncov	2020-03-09	J0C	Canada	Quebec	J0C	genome	29782	Human	?	?	Roy Romanow Provincial Laboratory	National Microbiology Laboratory	Majer et al	https://www.gisaid.org	?
+Canada/QC_13/2019	ncov	2020-03-09	J9P	Canada	New Brunswick	J9P	genome	29782	Human	?	?	Roy Romanow Provincial Laboratory	National Microbiology Laboratory	Majer et al	https://www.gisaid.org	?
+Canada/QC_14/2019	ncov	2020-03-09	J9A	Congo	Quebec	J9A	genome	29782	Human	?	?	Roy Romanow Provincial Laboratory	National Microbiology Laboratory	Majer et al	https://www.gisaid.org	?

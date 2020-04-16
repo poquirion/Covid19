@@ -1,0 +1,901 @@
+rta	G0A	#5E1D9D
+rta	G0B	#5D1D9E
+rta	G0C	#5C1D9F
+rta	G0E	#5A1DA0
+rta	G0G	#591DA1
+rta	G0H	#581EA2
+rta	G0J	#571EA3
+rta	G0K	#551EA4
+rta	G0L	#541EA5
+rta	G0M	#531EA6
+rta	G0N	#521EA7
+rta	G0P	#501EA9
+rta	G0R	#4F1EAA
+rta	G0S	#4F1FAA
+rta	G0T	#4E20AB
+rta	G0V	#4E21AC
+rta	G0W	#4D21AD
+rta	G0X	#4D22AE
+rta	G0Y	#4C23AE
+rta	G0Z	#4C24AF
+rta	G1A	#4B25B0
+rta	G1B	#4B26B1
+rta	G1C	#4B27B2
+rta	G1E	#4A27B3
+rta	G1G	#4A28B3
+rta	G1H	#4929B4
+rta	G1J	#492AB5
+rta	G1K	#482BB6
+rta	G1L	#482CB7
+rta	G1M	#472CB7
+rta	G1N	#472DB8
+rta	G1P	#462EB9
+rta	G1R	#462FBA
+rta	G1S	#4530BB
+rta	G1T	#4531BB
+rta	G1V	#4431BC
+rta	G1W	#4432BD
+rta	G1X	#4433BE
+rta	G1Y	#4334BF
+rta	G2A	#4335C0
+rta	G2B	#4236C0
+rta	G2C	#4236C1
+rta	G2E	#4137C2
+rta	G2G	#4138C3
+rta	G2J	#4039C4
+rta	G2K	#403AC4
+rta	G2L	#403BC5
+rta	G2M	#403CC5
+rta	G2N	#403DC5
+rta	G3A	#403EC6
+rta	G3E	#403FC6
+rta	G3G	#4040C6
+rta	G3H	#4041C7
+rta	G3J	#4042C7
+rta	G3K	#3F43C8
+rta	G3L	#3F44C8
+rta	G3M	#3F45C8
+rta	G3Z	#3F47C9
+rta	G4A	#3F48C9
+rta	G4R	#3F49C9
+rta	G4S	#3F4ACA
+rta	G4T	#3F4BCA
+rta	G4V	#3F4CCA
+rta	G4W	#3F4DCB
+rta	G4X	#3F4ECB
+rta	G4Z	#3F4FCC
+rta	G5A	#3F50CC
+rta	G5B	#3F51CC
+rta	G5C	#3F52CD
+rta	G5H	#3F53CD
+rta	G5J	#3F54CD
+rta	G5L	#3F55CE
+rta	G5M	#3F56CE
+rta	G5N	#3E57CE
+rta	G5R	#3E58CF
+rta	G5T	#3E5ACF
+rta	G5V	#3E5BD0
+rta	G5X	#3E5CD0
+rta	G5Y	#3E5DD0
+rta	G5Z	#3F5ED0
+rta	G6A	#3F5FD0
+rta	G6B	#3F60D0
+rta	G6C	#3F61D0
+rta	G6E	#3F61D0
+rta	G6G	#3F62CF
+rta	G6H	#4063CF
+rta	G6J	#4064CF
+rta	G6K	#4065CF
+rta	G6L	#4066CF
+rta	G6P	#4067CF
+rta	G6R	#4068CF
+rta	G6S	#4169CF
+rta	G6T	#416ACF
+rta	G6V	#416BCE
+rta	G6W	#416CCE
+rta	G6X	#416DCE
+rta	G6Z	#416ECE
+rta	G7A	#426FCE
+rta	G7B	#4270CE
+rta	G7G	#4271CE
+rta	G7H	#4272CE
+rta	G7J	#4273CE
+rta	G7K	#4274CE
+rta	G7N	#4375CD
+rta	G7P	#4376CD
+rta	G7S	#4377CD
+rta	G7T	#4378CD
+rta	G7X	#4379CD
+rta	G7Y	#437ACD
+rta	G7Z	#447BCD
+rta	G8A	#447CCD
+rta	G8B	#447DCC
+rta	G8C	#447DCC
+rta	G8E	#457ECB
+rta	G8G	#457FCB
+rta	G8H	#4580CA
+rta	G8J	#4680CA
+rta	G8K	#4681C9
+rta	G8L	#4682C9
+rta	G8M	#4783C8
+rta	G8N	#4784C8
+rta	G8P	#4784C7
+rta	G8T	#4785C7
+rta	G8V	#4886C6
+rta	G8W	#4887C6
+rta	G8Y	#4887C5
+rta	G8Z	#4988C5
+rta	G9A	#4989C4
+rta	G9B	#498AC4
+rta	G9C	#4A8AC4
+rta	G9H	#4A8BC3
+rta	G9N	#4A8CC3
+rta	G9P	#4B8DC2
+rta	G9R	#4B8EC2
+rta	G9T	#4B8EC1
+rta	G9X	#4B8FC1
+rta	H0H	#4C90C0
+rta	H0M	#4C91C0
+rta	H1A	#4C91BF
+rta	H1B	#4D92BF
+rta	H1C	#4D93BE
+rta	H1E	#4D94BE
+rta	H1G	#4E94BD
+rta	H1H	#4E95BD
+rta	H1J	#4E96BC
+rta	H1K	#4F96BB
+rta	H1L	#4F97BB
+rta	H1M	#5097BA
+rta	H1N	#5098B9
+rta	H1P	#5099B8
+rta	H1R	#5199B8
+rta	H1S	#519AB7
+rta	H1T	#529AB6
+rta	H1V	#529BB5
+rta	H1W	#539BB5
+rta	H1X	#539CB4
+rta	H1Y	#539CB3
+rta	H1Z	#549DB2
+rta	H2A	#549DB2
+rta	H2B	#559EB1
+rta	H2C	#559FB0
+rta	H2E	#569FB0
+rta	H2G	#56A0AF
+rta	H2H	#56A0AE
+rta	H2J	#57A1AD
+rta	H2K	#57A1AD
+rta	H2L	#58A2AC
+rta	H2M	#58A2AB
+rta	H2N	#59A3AA
+rta	H2P	#59A3AA
+rta	H2R	#59A4A9
+rta	H2S	#5AA5A8
+rta	H2T	#5AA5A8
+rta	H2V	#5BA6A7
+rta	H2W	#5BA6A6
+rta	H2X	#5CA7A5
+rta	H2Y	#5CA7A5
+rta	H2Z	#5CA8A4
+rta	H3A	#5DA8A3
+rta	H3B	#5EA8A2
+rta	H3C	#5EA9A1
+rta	H3E	#5FA9A1
+rta	H3G	#5FA9A0
+rta	H3H	#60AA9F
+rta	H3J	#60AA9E
+rta	H3K	#61AA9D
+rta	H3L	#61AB9C
+rta	H3M	#62AB9C
+rta	H3N	#62AC9B
+rta	H3P	#63AC9A
+rta	H3R	#63AC99
+rta	H3S	#64AD98
+rta	H3T	#65AD98
+rta	H3V	#65AD97
+rta	H3W	#66AE96
+rta	H3X	#66AE95
+rta	H3Y	#67AE94
+rta	H3Z	#67AF93
+rta	H4A	#68AF93
+rta	H4B	#68AF92
+rta	H4C	#69B091
+rta	H4E	#69B090
+rta	H4G	#6AB18F
+rta	H4H	#6AB18F
+rta	H4J	#6BB18E
+rta	H4K	#6CB28D
+rta	H4L	#6CB28C
+rta	H4M	#6DB28B
+rta	H4N	#6DB38A
+rta	H4P	#6EB38A
+rta	H4R	#6EB389
+rta	H4S	#6FB388
+rta	H4T	#70B487
+rta	H4V	#70B487
+rta	H4W	#71B486
+rta	H4X	#72B485
+rta	H4Y	#72B584
+rta	H4Z	#73B583
+rta	H5A	#74B583
+rta	H5B	#74B582
+rta	H7A	#75B581
+rta	H7B	#76B680
+rta	H7C	#76B680
+rta	H7E	#77B67F
+rta	H7G	#77B67E
+rta	H7H	#78B77D
+rta	H7J	#79B77C
+rta	H7K	#79B77C
+rta	H7L	#7AB77B
+rta	H7M	#7BB77A
+rta	H7N	#7BB879
+rta	H7P	#7CB879
+rta	H7R	#7DB878
+rta	H7S	#7DB877
+rta	H7T	#7EB876
+rta	H7V	#7FB975
+rta	H7W	#7FB975
+rta	H7X	#80B974
+rta	H7Y	#81B973
+rta	H8N	#81BA72
+rta	H8P	#82BA72
+rta	H8R	#83BA71
+rta	H8S	#83BA70
+rta	H8T	#84BA6F
+rta	H8Y	#85BA6F
+rta	H8Z	#85BA6E
+rta	H9A	#86BB6E
+rta	H9B	#87BB6D
+rta	H9C	#88BB6C
+rta	H9E	#88BB6C
+rta	H9G	#89BB6B
+rta	H9H	#8ABB6A
+rta	H9J	#8BBB6A
+rta	H9K	#8BBB69
+rta	H9P	#8CBB68
+rta	H9R	#8DBC68
+rta	H9S	#8DBC67
+rta	H9W	#8EBC67
+rta	H9X	#8FBC66
+rta	J0A	#90BC65
+rta	J0B	#90BC65
+rta	J0C	#91BC64
+rta	J0E	#92BC63
+rta	J0G	#93BC63
+rta	J0H	#93BD62
+rta	J0J	#94BD61
+rta	J0K	#95BD61
+rta	J0L	#95BD60
+rta	J0M	#96BD60
+rta	J0N	#97BD5F
+rta	J0P	#98BD5E
+rta	J0R	#98BD5E
+rta	J0S	#99BD5D
+rta	J0T	#9ABD5C
+rta	J0V	#9BBE5C
+rta	J0W	#9BBE5B
+rta	J0X	#9CBE5B
+rta	J0Y	#9DBE5A
+rta	J0Z	#9EBE5A
+rta	J1A	#9EBE59
+rta	J1E	#9FBE59
+rta	J1G	#A0BE58
+rta	J1H	#A1BE58
+rta	J1J	#A1BE57
+rta	J1K	#A2BE57
+rta	J1L	#A3BE57
+rta	J1M	#A4BE56
+rta	J1N	#A4BE56
+rta	J1S	#A5BE55
+rta	J1T	#A6BE55
+rta	J1X	#A7BE54
+rta	J1Z	#A7BE54
+rta	J2A	#A8BD53
+rta	J2B	#A9BD53
+rta	J2C	#AABD52
+rta	J2E	#AABD52
+rta	J2G	#ABBD51
+rta	J2H	#ACBD51
+rta	J2J	#ADBD51
+rta	J2K	#AEBD50
+rta	J2L	#AEBD50
+rta	J2N	#AFBD4F
+rta	J2R	#B0BD4F
+rta	J2S	#B1BD4E
+rta	J2T	#B1BD4E
+rta	J2W	#B2BD4D
+rta	J2X	#B3BD4D
+rta	J2Y	#B4BD4C
+rta	J3A	#B4BD4C
+rta	J3B	#B5BD4C
+rta	J3E	#B6BD4B
+rta	J3G	#B6BD4B
+rta	J3H	#B7BD4B
+rta	J3L	#B8BC4B
+rta	J3M	#B8BC4A
+rta	J3N	#B9BC4A
+rta	J3P	#BABC4A
+rta	J3R	#BBBC49
+rta	J3T	#BBBC49
+rta	J3V	#BCBB49
+rta	J3X	#BDBB48
+rta	J3Y	#BDBB48
+rta	J3Z	#BEBB48
+rta	J4B	#BFBB48
+rta	J4G	#BFBB47
+rta	J4H	#C0BA47
+rta	J4J	#C1BA47
+rta	J4K	#C1BA46
+rta	J4L	#C2BA46
+rta	J4M	#C3BA46
+rta	J4N	#C4BA46
+rta	J4P	#C4B945
+rta	J4R	#C5B945
+rta	J4S	#C6B945
+rta	J4T	#C6B944
+rta	J4V	#C7B944
+rta	J4W	#C8B944
+rta	J4X	#C8B843
+rta	J4Y	#C9B843
+rta	J4Z	#CAB843
+rta	J5A	#CBB843
+rta	J5B	#CBB842
+rta	J5J	#CCB742
+rta	J5K	#CCB742
+rta	J5L	#CDB642
+rta	J5M	#CDB642
+rta	J5R	#CEB641
+rta	J5T	#CEB541
+rta	J5V	#CFB541
+rta	J5W	#CFB441
+rta	J5X	#D0B441
+rta	J5Y	#D0B440
+rta	J5Z	#D1B340
+rta	J6A	#D2B340
+rta	J6E	#D2B240
+rta	J6J	#D3B240
+rta	J6K	#D3B240
+rta	J6N	#D4B13F
+rta	J6R	#D4B13F
+rta	J6S	#D5B13F
+rta	J6T	#D5B03F
+rta	J6V	#D6B03F
+rta	J6W	#D6AF3E
+rta	J6X	#D7AF3E
+rta	J6Y	#D7AF3E
+rta	J6Z	#D8AE3E
+rta	J7A	#D8AE3E
+rta	J7B	#D9AD3D
+rta	J7C	#DAAD3D
+rta	J7E	#DAAD3D
+rta	J7G	#DBAC3D
+rta	J7H	#DBAC3D
+rta	J7J	#DCAB3D
+rta	J7K	#DCAB3C
+rta	J7L	#DDAA3C
+rta	J7M	#DDAA3C
+rta	J7N	#DDA93C
+rta	J7P	#DDA83C
+rta	J7R	#DEA83C
+rta	J7T	#DEA73B
+rta	J7V	#DEA63B
+rta	J7X	#DFA63B
+rta	J7Y	#DFA53B
+rta	J7Z	#DFA43B
+rta	J8A	#DFA33B
+rta	J8B	#E0A33A
+rta	J8C	#E0A23A
+rta	J8E	#E0A13A
+rta	J8G	#E1A13A
+rta	J8H	#E1A03A
+rta	J8L	#E19F3A
+rta	J8M	#E19F3A
+rta	J8N	#E29E39
+rta	J8P	#E29D39
+rta	J8R	#E29D39
+rta	J8T	#E39C39
+rta	J8V	#E39B39
+rta	J8X	#E39B39
+rta	J8Y	#E39A38
+rta	J8Z	#E49938
+rta	J9A	#E49938
+rta	J9B	#E49838
+rta	J9E	#E59738
+rta	J9H	#E59738
+rta	J9J	#E59637
+rta	J9L	#E69537
+rta	J9P	#E69437
+rta	J9T	#E69337
+rta	J9V	#E69237
+rta	J9X	#E69137
+rta	J9Y	#E69036
+rta	J9Z	#E68F36
+rta	Alberta	#E68E36
+rta	British Columbia	#E68D36
+rta	Manitoba	#E68C36
+rta	New Brunswick	#E68B35
+rta	Newfoundland and Labrador	#E68A35
+rta	Northwest Territory	#E68935
+rta	Nova Scotia	#E68835
+rta	Ontario	#E68735
+rta	Prince Edward Island	#E68635
+rta	Quebec	#E68534
+rta	Saskatchewan	#E68434
+rta	Yukon	#E68334
+rta	Aruba	#E68234
+rta	Afghanistan	#E68134
+rta	Angola	#E68033
+rta	Anguilla	#E67F33
+rta	Åland Islands	#E67E33
+rta	Albania	#E67D33
+rta	Andorra	#E67C33
+rta	United Arab Emirates	#E67B32
+rta	Argentina	#E67A32
+rta	Armenia	#E67932
+rta	American Samoa	#E67832
+rta	Antarctica	#E67732
+rta	French Southern Territories	#E67631
+rta	Antigua and Barbuda	#E67531
+rta	Australia	#E67431
+rta	Austria	#E67331
+rta	Azerbaijan	#E67231
+rta	Burundi	#E67130
+rta	Belgium	#E67030
+rta	Benin	#E56E30
+rta	Bonaire, Sint Eustatius and Saba	#E56D30
+rta	Burkina Faso	#E56C2F
+rta	Bangladesh	#E56B2F
+rta	Bulgaria	#E5692F
+rta	Bahrain	#E4682F
+rta	Bahamas	#E4672E
+rta	Bosnia and Herzegovina	#E4662E
+rta	Saint Barthélemy	#E4642E
+rta	Belarus	#E4632E
+rta	Belize	#E3622D
+rta	Bermuda	#E3612D
+rta	Brazil	#E35F2D
+rta	Barbados	#E35E2D
+rta	Brunei Darussalam	#E35D2C
+rta	Bhutan	#E25C2C
+rta	Bouvet Island	#E25A2C
+rta	Botswana	#E2592C
+rta	Central African Republic	#E2582B
+rta	Canada	#E2572B
+rta	Cocos (Keeling) Islands	#E2552B
+rta	Switzerland	#E1542B
+rta	Chile	#E1532A
+rta	China	#E1522A
+rta	Côte d'Ivoire	#E1502A
+rta	Cameroon	#E14F2A
+rta	Congo, The Democratic Republic of the	#E04E2A
+rta	Congo	#E04D29
+rta	Cook Islands	#E04B29
+rta	Colombia	#E04A29
+rta	Comoros	#E04929
+rta	Cabo Verde	#E04828
+rta	Costa Rica	#DF4628
+rta	Cuba	#DF4528
+rta	Curaçao	#DF4428
+rta	Christmas Island	#DF4227
+rta	Cayman Islands	#DF4127
+rta	Cyprus	#DF4027
+rta	Czechia	#DE3F27
+rta	Germany	#DE3D27
+rta	Djibouti	#DE3C26
+rta	Dominica	#DE3B26
+rta	Denmark	#DE3A26
+rta	Dominican Republic	#DE3826
+rta	Algeria	#DD3725
+rta	Ecuador	#DD3625
+rta	Egypt	#DD3525
+rta	Eritrea	#DD3325
+rta	Western Sahara	#DD3225
+rta	Spain	#DD3124
+rta	Estonia	#DC3024
+rta	Ethiopia	#DC2E24
+rta	Finland	#DC2D24
+rta	Fiji	#DC2C24
+rta	Falkland Islands (Malvinas)	#DC2B23
+rta	France	#DC2923
+rta	Faroe Islands	#DB2823
+rta	Micronesia, Federated States of	#5E1D9D
+rta	Gabon	#5A1DA0
+rta	United Kingdom	#561EA4
+rta	Georgia	#521EA7
+rta	Guernsey	#4F1FAA
+rta	Ghana	#4D22AD
+rta	Gibraltar	#4C24B0
+rta	Guinea	#4A27B2
+rta	Guadeloupe	#492AB5
+rta	Gambia	#472CB7
+rta	Guinea-Bissau	#462FBA
+rta	Equatorial Guinea	#4432BD
+rta	Greece	#4334BF
+rta	Grenada	#4137C2
+rta	Greenland	#403AC4
+rta	Guatemala	#403DC5
+rta	French Guiana	#4041C7
+rta	Guam	#3F44C8
+rta	Guyana	#3F48C9
+rta	Hong Kong	#3F4BCA
+rta	Heard Island and McDonald Islands	#3F4ECB
+rta	Honduras	#3F52CD
+rta	Croatia	#3F55CE
+rta	Haiti	#3E58CF
+rta	Hungary	#3E5CD0
+rta	Indonesia	#3F5FD0
+rta	Isle of Man	#3F62CF
+rta	India	#4065CF
+rta	British Indian Ocean Territory	#4068CF
+rta	Ireland	#416CCE
+rta	Iran, Islamic Republic of	#426FCE
+rta	Iraq	#4272CE
+rta	Iceland	#4375CD
+rta	Israel	#4378CD
+rta	Italy	#447BCD
+rta	Jamaica	#457ECB
+rta	Jersey	#4680CA
+rta	Jordan	#4783C8
+rta	Japan	#4885C7
+rta	Kazakhstan	#4988C5
+rta	Kenya	#4A8AC4
+rta	Kyrgyzstan	#4B8DC2
+rta	Cambodia	#4C8FC0
+rta	Kiribati	#4D92BF
+rta	Saint Kitts and Nevis	#4E94BD
+rta	Korea, Republic of	#4F96BB
+rta	Kuwait	#5098B9
+rta	Lao People's Democratic Republic	#519AB7
+rta	Lebanon	#539CB4
+rta	Liberia	#549DB2
+rta	Libya	#569FB0
+rta	Saint Lucia	#57A1AD
+rta	Liechtenstein	#58A3AB
+rta	Sri Lanka	#5AA4A9
+rta	Lesotho	#5BA6A6
+rta	Lithuania	#5DA8A4
+rta	Luxembourg	#5EA9A1
+rta	Latvia	#60AA9E
+rta	Macao	#62AB9C
+rta	Saint Martin (French part)	#63AC99
+rta	Morocco	#65AD97
+rta	Monaco	#67AF94
+rta	Moldova, Republic of	#69B091
+rta	Madagascar	#6AB18F
+rta	Maldives	#6CB28C
+rta	Mexico	#6EB389
+rta	Marshall Islands	#70B487
+rta	North Macedonia	#72B484
+rta	Mali	#74B582
+rta	Malta	#76B67F
+rta	Myanmar	#78B77D
+rta	Montenegro	#7AB77A
+rta	Mongolia	#7DB878
+rta	Northern Mariana Islands	#7FB975
+rta	Mozambique	#81B973
+rta	Mauritania	#83BA71
+rta	Mauritius	#85BA6E
+rta	Malawi	#88BB6C
+rta	Malaysia	#8ABB6A
+rta	Mayotte	#8CBB68
+rta	Namibia	#8FBC66
+rta	New Caledonia	#91BC64
+rta	Niger	#93BD62
+rta	Norfolk Island	#96BD60
+rta	Nigeria	#98BD5E
+rta	Nicaragua	#9ABE5C
+rta	Niue	#9DBE5A
+rta	Netherlands	#9FBE59
+rta	Norway	#A2BE57
+rta	Nauru	#A4BE56
+rta	New Zealand	#A7BE54
+rta	Oman	#A9BD53
+rta	Pakistan	#ABBD51
+rta	Panama	#AEBD50
+rta	Pitcairn	#B0BD4E
+rta	Peru	#B3BD4D
+rta	Philippines	#B5BD4C
+rta	Palau	#B7BD4B
+rta	Poland	#B9BC4A
+rta	Puerto Rico	#BCBB49
+rta	Portugal	#BEBB48
+rta	Paraguay	#C0BA47
+rta	Palestine, State of	#C2BA46
+rta	French Polynesia	#C5B945
+rta	Réunion	#C7B944
+rta	Romania	#C9B843
+rta	Russian Federation	#CBB742
+rta	Rwanda	#CDB642
+rta	Saudi Arabia	#CFB541
+rta	Sudan	#D0B440
+rta	Senegal	#D2B240
+rta	South Georgia and the South Sandwich Islands	#D4B13F
+rta	Saint Helena, Ascension and Tristan da Cunha	#D6B03F
+rta	Svalbard and Jan Mayen	#D7AF3E
+rta	Solomon Islands	#D9AD3D
+rta	Sierra Leone	#DBAC3D
+rta	El Salvador	#DCAB3C
+rta	San Marino	#DDA93C
+rta	Somalia	#DEA63B
+rta	Serbia	#DFA43B
+rta	South Sudan	#E0A23A
+rta	Sao Tome and Principe	#E1A03A
+rta	Suriname	#E29E39
+rta	Slovakia	#E39B39
+rta	Sweden	#E49938
+rta	Eswatini	#E59738
+rta	Seychelles	#E69537
+rta	Syrian Arab Republic	#E69237
+rta	Chad	#E68E36
+rta	Togo	#E68B35
+rta	Thailand	#E68835
+rta	Tajikistan	#E68534
+rta	Tokelau	#E68134
+rta	Turkmenistan	#E67E33
+rta	Tonga	#E67B32
+rta	Trinidad and Tobago	#E67832
+rta	Tunisia	#E67531
+rta	Turkey	#E67130
+rta	Tuvalu	#E56D30
+rta	Taiwan, Province of China	#E5692F
+rta	Tanzania, United Republic of	#E4652E
+rta	Uganda	#E3612D
+rta	Ukraine	#E35D2C
+rta	United States	#E2592C
+rta	Uzbekistan	#E1552B
+rta	Saint Vincent and the Grenadines	#E1512A
+rta	Venezuela, Bolivarian Republic of	#E04D29
+rta	Virgin Islands, British	#E04829
+rta	Viet Nam	#DF4428
+rta	Vanuatu	#DF4027
+rta	Wallis and Futuna	#DE3C26
+rta	Yemen	#DE3826
+rta	South Africa	#DD3425
+rta	Zambia	#DD3024
+rta	Zimbabwe	#DC2C24
+
+province	Alberta	#462EB9
+province	British Columbia	#3E58CF
+province	Manitoba	#4681CA
+province	New Brunswick	#559EB1
+province	Newfoundland and Labrador	#6AB090
+province	Northwest Territory	#85BA6F
+province	Nova Scotia	#A4BE56
+province	Ontario	#C3BA46
+province	Prince Edward Island	#DBAC3D
+province	Quebec	#E68C36
+province	Saskatchewan	#E35D2D
+province	Yukon	#DB2823
+
+country	Aruba	#5E1D9D
+country	Afghanistan	#5B1D9F
+country	Angola	#591DA1
+country	Anguilla	#561EA4
+country	Åland Islands	#531EA6
+country	Albania	#511EA8
+country	Andorra	#4F1FAA
+country	United Arab Emirates	#4E21AC
+country	Argentina	#4D23AE
+country	Armenia	#4C24B0
+country	American Samoa	#4B26B1
+country	Antarctica	#4A28B3
+country	French Southern Territories	#492AB5
+country	Antigua and Barbuda	#482CB7
+country	Australia	#472EB9
+country	Austria	#462FBA
+country	Azerbaijan	#4531BC
+country	Burundi	#4433BE
+country	Belgium	#4335C0
+country	Benin	#4237C1
+country	Bonaire, Sint Eustatius and Saba	#4138C3
+country	Burkina Faso	#403AC4
+country	Bangladesh	#403DC5
+country	Bulgaria	#403FC6
+country	Bahrain	#4041C7
+country	Bahamas	#3F44C8
+country	Bosnia and Herzegovina	#3F46C8
+country	Saint Barthélemy	#3F48C9
+country	Belarus	#3F4ACA
+country	Belize	#3F4DCB
+country	Bermuda	#3F4FCC
+country	Brazil	#3F51CC
+country	Barbados	#3F54CD
+country	Brunei Darussalam	#3F56CE
+country	Bhutan	#3E58CF
+country	Bouvet Island	#3E5AD0
+country	Botswana	#3E5DD0
+country	Central African Republic	#3F5FD0
+country	Canada	#3F61D0
+country	Cocos (Keeling) Islands	#3F63CF
+country	Switzerland	#4065CF
+country	Chile	#4067CF
+country	China	#4169CF
+country	Côte d'Ivoire	#416CCE
+country	Cameroon	#416ECE
+country	Congo, The Democratic Republic of the	#4270CE
+country	Congo	#4272CE
+country	Cook Islands	#4274CE
+country	Colombia	#4376CD
+country	Comoros	#4378CD
+country	Cabo Verde	#447ACD
+country	Costa Rica	#447CCC
+country	Cuba	#457ECB
+country	Curaçao	#4580CA
+country	Christmas Island	#4681C9
+country	Cayman Islands	#4783C8
+country	Cyprus	#4785C7
+country	Czechia	#4886C6
+country	Germany	#4988C5
+country	Djibouti	#498AC4
+country	Dominica	#4A8BC3
+country	Denmark	#4B8DC2
+country	Dominican Republic	#4B8FC1
+country	Algeria	#4C90C0
+country	Ecuador	#4D92BF
+country	Egypt	#4D94BE
+country	Eritrea	#4E95BD
+country	Western Sahara	#4F97BB
+country	Spain	#5098B9
+country	Estonia	#5199B8
+country	Ethiopia	#529AB6
+country	Finland	#539BB5
+country	Fiji	#549CB3
+country	Falkland Islands (Malvinas)	#549EB1
+country	France	#559FB0
+country	Faroe Islands	#56A0AE
+country	Micronesia, Federated States of	#57A1AD
+country	Gabon	#58A2AB
+country	United Kingdom	#59A4AA
+country	Georgia	#5AA5A8
+country	Guernsey	#5BA6A6
+country	Ghana	#5CA7A5
+country	Gibraltar	#5DA8A3
+country	Guinea	#5EA9A1
+country	Guadeloupe	#5FA9A0
+country	Gambia	#60AA9E
+country	Guinea-Bissau	#62AB9C
+country	Equatorial Guinea	#63AC9A
+country	Greece	#64AD98
+country	Grenada	#65AD97
+country	Greenland	#66AE95
+country	Guatemala	#67AF93
+country	French Guiana	#69B091
+country	Guam	#6AB090
+country	Guyana	#6BB18E
+country	Hong Kong	#6CB28C
+country	Heard Island and McDonald Islands	#6DB38A
+country	Honduras	#6FB389
+country	Croatia	#70B487
+country	Haiti	#72B485
+country	Hungary	#73B583
+country	Indonesia	#74B582
+country	Isle of Man	#76B680
+country	India	#77B67E
+country	British Indian Ocean Territory	#79B77D
+country	Ireland	#7AB77B
+country	Iran, Islamic Republic of	#7BB879
+country	Iraq	#7DB878
+country	Iceland	#7EB976
+country	Israel	#80B974
+country	Italy	#81B973
+country	Jamaica	#82BA71
+country	Jersey	#84BA70
+country	Jordan	#86BB6E
+country	Japan	#87BB6D
+country	Kazakhstan	#89BB6B
+country	Kenya	#8ABB6A
+country	Kyrgyzstan	#8CBB69
+country	Cambodia	#8DBC67
+country	Kiribati	#8FBC66
+country	Saint Kitts and Nevis	#91BC64
+country	Korea, Republic of	#92BC63
+country	Kuwait	#94BD62
+country	Lao People's Democratic Republic	#95BD60
+country	Lebanon	#97BD5F
+country	Liberia	#99BD5E
+country	Libya	#9ABE5C
+country	Saint Lucia	#9CBE5B
+country	Liechtenstein	#9DBE5A
+country	Sri Lanka	#9FBE59
+country	Lesotho	#A1BE58
+country	Lithuania	#A2BE57
+country	Luxembourg	#A4BE56
+country	Latvia	#A6BE55
+country	Macao	#A7BE54
+country	Saint Martin (French part)	#A9BD53
+country	Morocco	#ABBD52
+country	Monaco	#ACBD51
+country	Moldova, Republic of	#AEBD50
+country	Madagascar	#AFBD4F
+country	Maldives	#B1BD4E
+country	Mexico	#B3BD4D
+country	Marshall Islands	#B4BD4C
+country	North Macedonia	#B6BD4B
+country	Mali	#B7BD4B
+country	Malta	#B9BC4A
+country	Myanmar	#BABC49
+country	Montenegro	#BCBB49
+country	Mongolia	#BDBB48
+country	Northern Mariana Islands	#BFBB48
+country	Mozambique	#C0BA47
+country	Mauritania	#C2BA46
+country	Mauritius	#C3BA46
+country	Malawi	#C5B945
+country	Malaysia	#C6B944
+country	Mayotte	#C8B944
+country	Namibia	#C9B843
+country	New Caledonia	#CBB842
+country	Niger	#CCB742
+country	Norfolk Island	#CDB642
+country	Nigeria	#CEB541
+country	Nicaragua	#D0B441
+country	Niue	#D1B340
+country	Netherlands	#D2B340
+country	Norway	#D3B240
+country	Nauru	#D4B13F
+country	New Zealand	#D5B03F
+country	Oman	#D7AF3E
+country	Pakistan	#D8AE3E
+country	Panama	#D9AE3E
+country	Pitcairn	#DAAD3D
+country	Peru	#DBAC3D
+country	Philippines	#DCAB3C
+country	Palau	#DDA93C
+country	Poland	#DEA83C
+country	Puerto Rico	#DEA63B
+country	Portugal	#DFA53B
+country	Paraguay	#DFA33B
+country	Palestine, State of	#E0A23A
+country	French Polynesia	#E1A13A
+country	Réunion	#E19F3A
+country	Romania	#E29E39
+country	Russian Federation	#E39C39
+country	Rwanda	#E39B39
+country	Saudi Arabia	#E49938
+country	Sudan	#E49838
+country	Senegal	#E59638
+country	South Georgia and the South Sandwich Islands	#E69537
+country	Saint Helena, Ascension and Tristan da Cunha	#E69337
+country	Svalbard and Jan Mayen	#E69036
+country	Solomon Islands	#E68E36
+country	Sierra Leone	#E68C36
+country	El Salvador	#E68A35
+country	San Marino	#E68835
+country	Somalia	#E68534
+country	Serbia	#E68334
+country	South Sudan	#E68134
+country	Sao Tome and Principe	#E67F33
+country	Suriname	#E67D33
+country	Slovakia	#E67B32
+country	Sweden	#E67832
+country	Eswatini	#E67631
+country	Seychelles	#E67431
+country	Syrian Arab Republic	#E67131
+country	Chad	#E56F30
+country	Togo	#E56C2F
+country	Thailand	#E5692F
+country	Tajikistan	#E4672E
+country	Tokelau	#E4642E
+country	Turkmenistan	#E3612D
+country	Tonga	#E35F2D
+country	Trinidad and Tobago	#E35C2C
+country	Tunisia	#E2592C
+country	Turkey	#E2562B
+country	Tuvalu	#E1542B
+country	Taiwan, Province of China	#E1512A
+country	Tanzania, United Republic of	#E04E2A
+country	Uganda	#E04C29
+country	Ukraine	#E04929
+country	United States	#DF4628
+country	Uzbekistan	#DF4328
+country	Saint Vincent and the Grenadines	#DF4127
+country	Venezuela, Bolivarian Republic of	#DE3E27
+country	Virgin Islands, British	#DE3B26
+country	Viet Nam	#DE3826
+country	Vanuatu	#DD3625
+country	Wallis and Futuna	#DD3325
+country	Yemen	#DD3024
+country	South Africa	#DC2E24
+country	Zambia	#DC2B23
+country	Zimbabwe	#DB2823
+
