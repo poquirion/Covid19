@@ -1,6 +1,5 @@
 """
 Eric Fournier 20200415
-
 """
 
 import os
