@@ -1,0 +1,3 @@
+WorkflowError in line 45 of /data/PROJETS/COVID_19/TestRealDat_1/Snakefile:
+Config file config/Snakefile.yaml not found.
+  File "/data/PROJETS/COVID_19/TestRealDat_1/Snakefile", line 45, in <module>

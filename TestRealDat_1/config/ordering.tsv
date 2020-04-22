@@ -1,0 +1,910 @@
+rta	G0A
+rta	G0B
+rta	G0C
+rta	G0E
+rta	G0G
+rta	G0H
+rta	G0J
+rta	G0K
+rta	G0L
+rta	G0M
+rta	G0N
+rta	G0P
+rta	G0R
+rta	G0S
+rta	G0T
+rta	G0V
+rta	G0W
+rta	G0X
+rta	G0Y
+rta	G0Z
+rta	G1A
+rta	G1B
+rta	G1C
+rta	G1E
+rta	G1G
+rta	G1H
+rta	G1J
+rta	G1K
+rta	G1L
+rta	G1M
+rta	G1N
+rta	G1P
+rta	G1R
+rta	G1S
+rta	G1T
+rta	G1V
+rta	G1W
+rta	G1X
+rta	G1Y
+rta	G2A
+rta	G2B
+rta	G2C
+rta	G2E
+rta	G2G
+rta	G2J
+rta	G2K
+rta	G2L
+rta	G2M
+rta	G2N
+rta	G3A
+rta	G3E
+rta	G3G
+rta	G3H
+rta	G3J
+rta	G3K
+rta	G3L
+rta	G3M
+rta	G3Z
+rta	G4A
+rta	G4R
+rta	G4S
+rta	G4T
+rta	G4V
+rta	G4W
+rta	G4X
+rta	G4Z
+rta	G5A
+rta	G5B
+rta	G5C
+rta	G5H
+rta	G5J
+rta	G5L
+rta	G5M
+rta	G5N
+rta	G5R
+rta	G5T
+rta	G5V
+rta	G5X
+rta	G5Y
+rta	G5Z
+rta	G6A
+rta	G6B
+rta	G6C
+rta	G6E
+rta	G6G
+rta	G6H
+rta	G6J
+rta	G6K
+rta	G6L
+rta	G6P
+rta	G6R
+rta	G6S
+rta	G6T
+rta	G6V
+rta	G6W
+rta	G6X
+rta	G6Z
+rta	G7A
+rta	G7B
+rta	G7G
+rta	G7H
+rta	G7J
+rta	G7K
+rta	G7N
+rta	G7P
+rta	G7S
+rta	G7T
+rta	G7X
+rta	G7Y
+rta	G7Z
+rta	G8A
+rta	G8B
+rta	G8C
+rta	G8E
+rta	G8G
+rta	G8H
+rta	G8J
+rta	G8K
+rta	G8L
+rta	G8M
+rta	G8N
+rta	G8P
+rta	G8T
+rta	G8V
+rta	G8W
+rta	G8Y
+rta	G8Z
+rta	G9A
+rta	G9B
+rta	G9C
+rta	G9H
+rta	G9N
+rta	G9P
+rta	G9R
+rta	G9T
+rta	G9X
+rta	H0H
+rta	H0M
+rta	H1A
+rta	H1B
+rta	H1C
+rta	H1E
+rta	H1G
+rta	H1H
+rta	H1J
+rta	H1K
+rta	H1L
+rta	H1M
+rta	H1N
+rta	H1P
+rta	H1R
+rta	H1S
+rta	H1T
+rta	H1V
+rta	H1W
+rta	H1X
+rta	H1Y
+rta	H1Z
+rta	H2A
+rta	H2B
+rta	H2C
+rta	H2E
+rta	H2G
+rta	H2H
+rta	H2J
+rta	H2K
+rta	H2L
+rta	H2M
+rta	H2N
+rta	H2P
+rta	H2R
+rta	H2S
+rta	H2T
+rta	H2V
+rta	H2W
+rta	H2X
+rta	H2Y
+rta	H2Z
+rta	H3A
+rta	H3B
+rta	H3C
+rta	H3E
+rta	H3G
+rta	H3H
+rta	H3J
+rta	H3K
+rta	H3L
+rta	H3M
+rta	H3N
+rta	H3P
+rta	H3R
+rta	H3S
+rta	H3T
+rta	H3V
+rta	H3W
+rta	H3X
+rta	H3Y
+rta	H3Z
+rta	H4A
+rta	H4B
+rta	H4C
+rta	H4E
+rta	H4G
+rta	H4H
+rta	H4J
+rta	H4K
+rta	H4L
+rta	H4M
+rta	H4N
+rta	H4P
+rta	H4R
+rta	H4S
+rta	H4T
+rta	H4V
+rta	H4W
+rta	H4X
+rta	H4Y
+rta	H4Z
+rta	H5A
+rta	H5B
+rta	H7A
+rta	H7B
+rta	H7C
+rta	H7E
+rta	H7G
+rta	H7H
+rta	H7J
+rta	H7K
+rta	H7L
+rta	H7M
+rta	H7N
+rta	H7P
+rta	H7R
+rta	H7S
+rta	H7T
+rta	H7V
+rta	H7W
+rta	H7X
+rta	H7Y
+rta	H8N
+rta	H8P
+rta	H8R
+rta	H8S
+rta	H8T
+rta	H8Y
+rta	H8Z
+rta	H9A
+rta	H9B
+rta	H9C
+rta	H9E
+rta	H9G
+rta	H9H
+rta	H9J
+rta	H9K
+rta	H9P
+rta	H9R
+rta	H9S
+rta	H9W
+rta	H9X
+rta	J0A
+rta	J0B
+rta	J0C
+rta	J0E
+rta	J0G
+rta	J0H
+rta	J0J
+rta	J0K
+rta	J0L
+rta	J0M
+rta	J0N
+rta	J0P
+rta	J0R
+rta	J0S
+rta	J0T
+rta	J0V
+rta	J0W
+rta	J0X
+rta	J0Y
+rta	J0Z
+rta	J1A
+rta	J1E
+rta	J1G
+rta	J1H
+rta	J1J
+rta	J1K
+rta	J1L
+rta	J1M
+rta	J1N
+rta	J1S
+rta	J1T
+rta	J1X
+rta	J1Z
+rta	J2A
+rta	J2B
+rta	J2C
+rta	J2E
+rta	J2G
+rta	J2H
+rta	J2J
+rta	J2K
+rta	J2L
+rta	J2N
+rta	J2R
+rta	J2S
+rta	J2T
+rta	J2W
+rta	J2X
+rta	J2Y
+rta	J3A
+rta	J3B
+rta	J3E
+rta	J3G
+rta	J3H
+rta	J3L
+rta	J3M
+rta	J3N
+rta	J3P
+rta	J3R
+rta	J3T
+rta	J3V
+rta	J3X
+rta	J3Y
+rta	J3Z
+rta	J4B
+rta	J4G
+rta	J4H
+rta	J4J
+rta	J4K
+rta	J4L
+rta	J4M
+rta	J4N
+rta	J4P
+rta	J4R
+rta	J4S
+rta	J4T
+rta	J4V
+rta	J4W
+rta	J4X
+rta	J4Y
+rta	J4Z
+rta	J5A
+rta	J5B
+rta	J5J
+rta	J5K
+rta	J5L
+rta	J5M
+rta	J5R
+rta	J5T
+rta	J5V
+rta	J5W
+rta	J5X
+rta	J5Y
+rta	J5Z
+rta	J6A
+rta	J6E
+rta	J6J
+rta	J6K
+rta	J6N
+rta	J6R
+rta	J6S
+rta	J6T
+rta	J6V
+rta	J6W
+rta	J6X
+rta	J6Y
+rta	J6Z
+rta	J7A
+rta	J7B
+rta	J7C
+rta	J7E
+rta	J7G
+rta	J7H
+rta	J7J
+rta	J7K
+rta	J7L
+rta	J7M
+rta	J7N
+rta	J7P
+rta	J7R
+rta	J7T
+rta	J7V
+rta	J7X
+rta	J7Y
+rta	J7Z
+rta	J8A
+rta	J8B
+rta	J8C
+rta	J8E
+rta	J8G
+rta	J8H
+rta	J8L
+rta	J8M
+rta	J8N
+rta	J8P
+rta	J8R
+rta	J8T
+rta	J8V
+rta	J8X
+rta	J8Y
+rta	J8Z
+rta	J9A
+rta	J9B
+rta	J9E
+rta	J9H
+rta	J9J
+rta	J9L
+rta	J9P
+rta	J9T
+rta	J9V
+rta	J9X
+rta	J9Y
+rta	J9Z
+rta	Aruba
+rta	Afghanistan
+rta	Angola
+rta	Anguilla
+rta	Åland Islands
+rta	Albania
+rta	Andorra
+rta	United Arab Emirates
+rta	Argentina
+rta	Armenia
+rta	American Samoa
+rta	Antarctica
+rta	French Southern Territories
+rta	Antigua and Barbuda
+rta	Australia
+rta	Austria
+rta	Azerbaijan
+rta	Burundi
+rta	Belgium
+rta	Benin
+rta	Bonaire, Sint Eustatius and Saba
+rta	Burkina Faso
+rta	Bangladesh
+rta	Bulgaria
+rta	Bahrain
+rta	Bahamas
+rta	Bosnia and Herzegovina
+rta	Saint Barthélemy
+rta	Belarus
+rta	Belize
+rta	Bermuda
+rta	Brazil
+rta	Barbados
+rta	Brunei Darussalam
+rta	Bhutan
+rta	Bouvet Island
+rta	Botswana
+rta	Central African Republic
+rta	Canada
+rta	Cocos (Keeling) Islands
+rta	Switzerland
+rta	Chile
+rta	China
+rta	Côte d'Ivoire
+rta	Cameroon
+rta	Congo, The Democratic Republic of the
+rta	Congo
+rta	Cook Islands
+rta	Colombia
+rta	Comoros
+rta	Cabo Verde
+rta	Costa Rica
+rta	Cuba
+rta	Curaçao
+rta	Christmas Island
+rta	Cayman Islands
+rta	Cyprus
+rta	Czechia
+rta	Germany
+rta	Djibouti
+rta	Dominica
+rta	Denmark
+rta	Dominican Republic
+rta	Algeria
+rta	Ecuador
+rta	Egypt
+rta	Eritrea
+rta	Western Sahara
+rta	Spain
+rta	Estonia
+rta	Ethiopia
+rta	Finland
+rta	Fiji
+rta	Falkland Islands (Malvinas)
+rta	France
+rta	Faroe Islands
+rta	Micronesia, Federated States of
+rta	Gabon
+rta	United Kingdom
+rta	Georgia
+rta	Guernsey
+rta	Ghana
+rta	Gibraltar
+rta	Guinea
+rta	Guadeloupe
+rta	Gambia
+rta	Guinea-Bissau
+rta	Equatorial Guinea
+rta	Greece
+rta	Grenada
+rta	Greenland
+rta	Guatemala
+rta	French Guiana
+rta	Guam
+rta	Guyana
+rta	Hong Kong
+rta	Heard Island and McDonald Islands
+rta	Honduras
+rta	Croatia
+rta	Haiti
+rta	Hungary
+rta	Indonesia
+rta	Isle of Man
+rta	India
+rta	British Indian Ocean Territory
+rta	Ireland
+rta	Iran, Islamic Republic of
+rta	Iraq
+rta	Iceland
+rta	Israel
+rta	Italy
+rta	Jamaica
+rta	Jersey
+rta	Jordan
+rta	Japan
+rta	Kazakhstan
+rta	Kenya
+rta	Kyrgyzstan
+rta	Cambodia
+rta	Kiribati
+rta	Saint Kitts and Nevis
+rta	Korea, Republic of
+rta	Kuwait
+rta	Lao People's Democratic Republic
+rta	Lebanon
+rta	Liberia
+rta	Libya
+rta	Saint Lucia
+rta	Liechtenstein
+rta	Sri Lanka
+rta	Lesotho
+rta	Lithuania
+rta	Luxembourg
+rta	Latvia
+rta	Macao
+rta	Saint Martin (French part)
+rta	Morocco
+rta	Monaco
+rta	Moldova, Republic of
+rta	Madagascar
+rta	Maldives
+rta	Mexico
+rta	Marshall Islands
+rta	North Macedonia
+rta	Mali
+rta	Malta
+rta	Myanmar
+rta	Montenegro
+rta	Mongolia
+rta	Northern Mariana Islands
+rta	Mozambique
+rta	Mauritania
+rta	Mauritius
+rta	Malawi
+rta	Malaysia
+rta	Mayotte
+rta	Namibia
+rta	New Caledonia
+rta	Niger
+rta	Norfolk Island
+rta	Nigeria
+rta	Nicaragua
+rta	Niue
+rta	Netherlands
+rta	Norway
+rta	Nauru
+rta	New Zealand
+rta	Oman
+rta	Pakistan
+rta	Panama
+rta	Pitcairn
+rta	Peru
+rta	Philippines
+rta	Palau
+rta	Poland
+rta	Puerto Rico
+rta	Portugal
+rta	Paraguay
+rta	Palestine, State of
+rta	French Polynesia
+rta	Réunion
+rta	Romania
+rta	Russian Federation
+rta	Rwanda
+rta	Saudi Arabia
+rta	Sudan
+rta	Senegal
+rta	South Georgia and the South Sandwich Islands
+rta	Saint Helena, Ascension and Tristan da Cunha
+rta	Svalbard and Jan Mayen
+rta	Solomon Islands
+rta	Sierra Leone
+rta	El Salvador
+rta	San Marino
+rta	Somalia
+rta	Serbia
+rta	South Sudan
+rta	Sao Tome and Principe
+rta	Suriname
+rta	Slovakia
+rta	Sweden
+rta	Eswatini
+rta	Seychelles
+rta	Syrian Arab Republic
+rta	Chad
+rta	Togo
+rta	Thailand
+rta	Tajikistan
+rta	Tokelau
+rta	Turkmenistan
+rta	Tonga
+rta	Trinidad and Tobago
+rta	Tunisia
+rta	Turkey
+rta	Tuvalu
+rta	Taiwan, Province of China
+rta	Tanzania, United Republic of
+rta	Uganda
+rta	Ukraine
+rta	United States
+rta	Uzbekistan
+rta	Saint Vincent and the Grenadines
+rta	Venezuela, Bolivarian Republic of
+rta	Virgin Islands, British
+rta	Viet Nam
+rta	Vanuatu
+rta	Wallis and Futuna
+rta	Yemen
+rta	South Africa
+rta	Zambia
+rta	Zimbabwe
+rta	04-Mauricie et Centre-du-Québec
+rta	08-Abitibi-Témiscamingue
+rta	05-Estrie
+rta	17-Nunavik
+rta	03-Capitale-Nationale
+rta	01-Bas-Saint-Laurent
+rta	18-Terres-Cries-de-la-Baie-James
+rta	15-Laurentides
+rta	09-Côte-Nord
+rta	11-Gaspésie - Îles-de-la-Madeleine
+rta	07-Outaouais
+rta	14-Lanaudière
+rta	06-Montréal
+rta	13-Laval
+rta	12-Chaudière-Appalaches
+rta	02-Saguenay - Lac-Saint-Jean
+rta	10-Nord-du-Québec
+rta	16-Montérégie
+rss	Aruba
+rss	Afghanistan
+rss	Angola
+rss	Anguilla
+rss	Åland Islands
+rss	Albania
+rss	Andorra
+rss	United Arab Emirates
+rss	Argentina
+rss	Armenia
+rss	American Samoa
+rss	Antarctica
+rss	French Southern Territories
+rss	Antigua and Barbuda
+rss	Australia
+rss	Austria
+rss	Azerbaijan
+rss	Burundi
+rss	Belgium
+rss	Benin
+rss	Bonaire, Sint Eustatius and Saba
+rss	Burkina Faso
+rss	Bangladesh
+rss	Bulgaria
+rss	Bahrain
+rss	Bahamas
+rss	Bosnia and Herzegovina
+rss	Saint Barthélemy
+rss	Belarus
+rss	Belize
+rss	Bermuda
+rss	Brazil
+rss	Barbados
+rss	Brunei Darussalam
+rss	Bhutan
+rss	Bouvet Island
+rss	Botswana
+rss	Central African Republic
+rss	Canada
+rss	Cocos (Keeling) Islands
+rss	Switzerland
+rss	Chile
+rss	China
+rss	Côte d'Ivoire
+rss	Cameroon
+rss	Congo, The Democratic Republic of the
+rss	Congo
+rss	Cook Islands
+rss	Colombia
+rss	Comoros
+rss	Cabo Verde
+rss	Costa Rica
+rss	Cuba
+rss	Curaçao
+rss	Christmas Island
+rss	Cayman Islands
+rss	Cyprus
+rss	Czechia
+rss	Germany
+rss	Djibouti
+rss	Dominica
+rss	Denmark
+rss	Dominican Republic
+rss	Algeria
+rss	Ecuador
+rss	Egypt
+rss	Eritrea
+rss	Western Sahara
+rss	Spain
+rss	Estonia
+rss	Ethiopia
+rss	Finland
+rss	Fiji
+rss	Falkland Islands (Malvinas)
+rss	France
+rss	Faroe Islands
+rss	Micronesia, Federated States of
+rss	Gabon
+rss	United Kingdom
+rss	Georgia
+rss	Guernsey
+rss	Ghana
+rss	Gibraltar
+rss	Guinea
+rss	Guadeloupe
+rss	Gambia
+rss	Guinea-Bissau
+rss	Equatorial Guinea
+rss	Greece
+rss	Grenada
+rss	Greenland
+rss	Guatemala
+rss	French Guiana
+rss	Guam
+rss	Guyana
+rss	Hong Kong
+rss	Heard Island and McDonald Islands
+rss	Honduras
+rss	Croatia
+rss	Haiti
+rss	Hungary
+rss	Indonesia
+rss	Isle of Man
+rss	India
+rss	British Indian Ocean Territory
+rss	Ireland
+rss	Iran, Islamic Republic of
+rss	Iraq
+rss	Iceland
+rss	Israel
+rss	Italy
+rss	Jamaica
+rss	Jersey
+rss	Jordan
+rss	Japan
+rss	Kazakhstan
+rss	Kenya
+rss	Kyrgyzstan
+rss	Cambodia
+rss	Kiribati
+rss	Saint Kitts and Nevis
+rss	Korea, Republic of
+rss	Kuwait
+rss	Lao People's Democratic Republic
+rss	Lebanon
+rss	Liberia
+rss	Libya
+rss	Saint Lucia
+rss	Liechtenstein
+rss	Sri Lanka
+rss	Lesotho
+rss	Lithuania
+rss	Luxembourg
+rss	Latvia
+rss	Macao
+rss	Saint Martin (French part)
+rss	Morocco
+rss	Monaco
+rss	Moldova, Republic of
+rss	Madagascar
+rss	Maldives
+rss	Mexico
+rss	Marshall Islands
+rss	North Macedonia
+rss	Mali
+rss	Malta
+rss	Myanmar
+rss	Montenegro
+rss	Mongolia
+rss	Northern Mariana Islands
+rss	Mozambique
+rss	Mauritania
+rss	Mauritius
+rss	Malawi
+rss	Malaysia
+rss	Mayotte
+rss	Namibia
+rss	New Caledonia
+rss	Niger
+rss	Norfolk Island
+rss	Nigeria
+rss	Nicaragua
+rss	Niue
+rss	Netherlands
+rss	Norway
+rss	Nauru
+rss	New Zealand
+rss	Oman
+rss	Pakistan
+rss	Panama
+rss	Pitcairn
+rss	Peru
+rss	Philippines
+rss	Palau
+rss	Poland
+rss	Puerto Rico
+rss	Portugal
+rss	Paraguay
+rss	Palestine, State of
+rss	French Polynesia
+rss	Réunion
+rss	Romania
+rss	Russian Federation
+rss	Rwanda
+rss	Saudi Arabia
+rss	Sudan
+rss	Senegal
+rss	South Georgia and the South Sandwich Islands
+rss	Saint Helena, Ascension and Tristan da Cunha
+rss	Svalbard and Jan Mayen
+rss	Solomon Islands
+rss	Sierra Leone
+rss	El Salvador
+rss	San Marino
+rss	Somalia
+rss	Serbia
+rss	South Sudan
+rss	Sao Tome and Principe
+rss	Suriname
+rss	Slovakia
+rss	Sweden
+rss	Eswatini
+rss	Seychelles
+rss	Syrian Arab Republic
+rss	Chad
+rss	Togo
+rss	Thailand
+rss	Tajikistan
+rss	Tokelau
+rss	Turkmenistan
+rss	Tonga
+rss	Trinidad and Tobago
+rss	Tunisia
+rss	Turkey
+rss	Tuvalu
+rss	Taiwan, Province of China
+rss	Tanzania, United Republic of
+rss	Uganda
+rss	Ukraine
+rss	United States
+rss	Uzbekistan
+rss	Saint Vincent and the Grenadines
+rss	Venezuela, Bolivarian Republic of
+rss	Virgin Islands, British
+rss	Viet Nam
+rss	Vanuatu
+rss	Wallis and Futuna
+rss	Yemen
+rss	South Africa
+rss	Zambia
+rss	Zimbabwe
+rss	04-Mauricie et Centre-du-Québec
+rss	08-Abitibi-Témiscamingue
+rss	05-Estrie
+rss	17-Nunavik
+rss	03-Capitale-Nationale
+rss	01-Bas-Saint-Laurent
+rss	18-Terres-Cries-de-la-Baie-James
+rss	15-Laurentides
+rss	09-Côte-Nord
+rss	11-Gaspésie - Îles-de-la-Madeleine
+rss	07-Outaouais
+rss	14-Lanaudière
+rss	06-Montréal
+rss	13-Laval
+rss	12-Chaudière-Appalaches
+rss	02-Saguenay - Lac-Saint-Jean
+rss	10-Nord-du-Québec
+rss	16-Montérégie

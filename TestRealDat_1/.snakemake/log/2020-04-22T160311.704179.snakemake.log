@@ -1,0 +1,20 @@
+localrules directive specifies rules that are not present in the Snakefile:
+	download
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 40
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	clean
+	1
+
+[Wed Apr 22 16:03:12 2020]
+Job 0: Removing directories: results  auspice
+
+rm -rfv results  auspice
+[Wed Apr 22 16:03:12 2020]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: /data/PROJETS/COVID_19/TestRealDat_1/.snakemake/log/2020-04-22T160311.704179.snakemake.log

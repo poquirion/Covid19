@@ -1,0 +1,250 @@
+localrules directive specifies rules that are not present in the Snakefile:
+	download
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 40
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	aggregate_alignments
+	1	all
+	1	ancestral
+	1	clades
+	1	colors
+	1	export
+	1	fix_colorings
+	1	incorporate_travel_history
+	1	mask
+	1	partition_sequences
+	1	recency
+	1	refine
+	1	subsample
+	1	tip_frequencies
+	1	traits
+	1	translate
+	1	tree
+	17
+
+[Wed Apr 22 15:54:29 2020]
+checkpoint partition_sequences:
+    input: results/filtered.fasta
+    output: results/split_sequences/pre/
+    jobid: 17
+Downstream jobs will be updated after completion.
+
+
+        python3 scripts/partition-sequences.py             --sequences results/filtered.fasta             --sequences-per-group 5             --output-dir results/split_sequences/pre/
+        
+
+[Wed Apr 22 15:54:29 2020]
+Job 14: Use metadata on submission date to construct submission recency field
+
+
+        python3 scripts/construct-recency-from-submission-date.py             --metadata results/metadata_adjusted.tsv             --output results/recency.json
+        
+
+[Wed Apr 22 15:54:29 2020]
+Job 7: Constructing colors file
+
+
+        python3 scripts/assign-colors.py             --ordering config/ordering.tsv             --color-schemes config/color_schemes.tsv             --output config/colors.tsv             --metadata results/metadata_adjusted.tsv
+        
+[Wed Apr 22 15:54:30 2020]
+Finished job 7.
+1 of 17 steps (6%) done
+Updating job 16 (aggregate_alignments).
+[Wed Apr 22 15:54:30 2020]
+Finished job 17.
+2 of 21 steps (10%) done
+
+[Wed Apr 22 15:54:30 2020]
+Job 23: 
+        partitions_intermediate: Copying sequence fastas
+        1
+        
+
+cp results/split_sequences/pre/1.fasta results/split_sequences/post/1.fasta
+
+[Wed Apr 22 15:54:30 2020]
+Job 22: 
+        partitions_intermediate: Copying sequence fastas
+        0
+        
+
+cp results/split_sequences/pre/0.fasta results/split_sequences/post/0.fasta
+[Wed Apr 22 15:54:30 2020]
+Finished job 23.
+3 of 21 steps (14%) done
+
+[Wed Apr 22 15:54:30 2020]
+Job 21: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  1
+        
+
+
+        augur align             --sequences results/split_sequences/post/1.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/1.fasta             --nthreads 2             --remove-reference             --fill-gaps
+        
+[Wed Apr 22 15:54:30 2020]
+Finished job 22.
+4 of 21 steps (19%) done
+
+[Wed Apr 22 15:54:30 2020]
+Job 20: 
+        Aligning sequences to config/reference.gb
+          - gaps relative to reference are considered real
+        Cluster:  0
+        
+
+
+        augur align             --sequences results/split_sequences/post/0.fasta             --reference-sequence config/reference.gb             --output results/split_alignments/0.fasta             --nthreads 2             --remove-reference             --fill-gaps
+        
+[Wed Apr 22 15:54:30 2020]
+Finished job 14.
+5 of 21 steps (24%) done
+[Wed Apr 22 15:54:33 2020]
+Finished job 21.
+6 of 21 steps (29%) done
+[Wed Apr 22 15:54:33 2020]
+Finished job 20.
+7 of 21 steps (33%) done
+
+[Wed Apr 22 15:54:33 2020]
+Job 19: Collecting alignments
+
+
+        cat results/split_alignments/0.fasta results/split_alignments/1.fasta > results/aligned.fasta
+        
+[Wed Apr 22 15:54:33 2020]
+Finished job 19.
+8 of 21 steps (38%) done
+
+[Wed Apr 22 15:54:33 2020]
+Job 9: 
+        Mask bases in alignment
+          - masking 130 from beginning
+          - masking 50 from end
+          - masking other sites: 18529 29849 29851 29853
+        
+
+
+        python3 scripts/mask-alignment.py             --alignment results/aligned.fasta             --mask-from-beginning 130             --mask-from-end 50             --mask-sites 18529 29849 29851 29853             --output results/masked.fasta
+        
+[Wed Apr 22 15:54:33 2020]
+Finished job 9.
+9 of 21 steps (43%) done
+
+[Wed Apr 22 15:54:33 2020]
+rule subsample:
+    input: results/masked.fasta
+    output: results/subsampled_alignment.fasta
+    jobid: 15
+    wildcards: region=
+
+
+        cp results/masked.fasta results/subsampled_alignment.fasta
+        
+[Wed Apr 22 15:54:33 2020]
+Finished job 15.
+10 of 21 steps (48%) done
+
+[Wed Apr 22 15:54:33 2020]
+Job 8: Building tree
+
+
+        augur tree             --alignment results/subsampled_alignment.fasta             --output results/tree_raw.nwk             --nthreads 4
+        
+[Wed Apr 22 15:54:34 2020]
+Finished job 8.
+11 of 21 steps (52%) done
+
+[Wed Apr 22 15:54:34 2020]
+Job 4: 
+        Refining tree
+          - estimate timetree
+          - use skyline coalescent timescale
+          - estimate marginal node dates
+        
+
+
+        augur refine             --tree results/tree_raw.nwk             --alignment results/masked.fasta             --metadata results/metadata_adjusted.tsv             --output-tree results/tree.nwk             --output-node-data results/branch_lengths.json             --root Wuhan-Hu-1/2019 Wuhan/WH01/2019             --timetree             --clock-rate 0.0008             --clock-std-dev 0.0004             --coalescent skyline             --date-inference marginal             --divergence-unit mutations             --date-confidence             --no-covariance             --clock-filter-iqd 4
+        
+[Wed Apr 22 15:54:44 2020]
+Finished job 4.
+12 of 21 steps (57%) done
+
+[Wed Apr 22 15:54:44 2020]
+Job 12: 
+        Inferring ancestral traits for rta_exposure
+          - increase uncertainty of reconstruction by 2.5 to partially account for sampling bias
+        
+
+
+        augur traits             --tree results/tree.nwk             --metadata results/metadata_adjusted.tsv             --output results/traits.json             --columns rta_exposure             --confidence             --sampling-bias-correction 2.5         
+
+[Wed Apr 22 15:54:44 2020]
+Job 2: Estimating censored KDE frequencies for tips
+
+
+        augur frequencies             --method kde             --metadata results/metadata_adjusted.tsv             --tree results/tree.nwk             --min-date 2019.0             --pivot-interval 1             --narrow-bandwidth 0.05             --proportion-wide 0.0             --output auspice/ncov_tip-frequencies.json
+        
+
+[Wed Apr 22 15:54:44 2020]
+Job 10: 
+        Reconstructing ancestral sequences and mutations
+          - not inferring ambiguous mutations
+        
+
+
+        augur ancestral             --tree results/tree.nwk             --alignment results/masked.fasta             --output-node-data results/nt_muts.json             --inference joint             --infer-ambiguous
+        
+[Wed Apr 22 15:54:45 2020]
+Finished job 2.
+13 of 21 steps (62%) done
+[Wed Apr 22 15:54:45 2020]
+Finished job 12.
+14 of 21 steps (67%) done
+[Wed Apr 22 15:54:46 2020]
+Finished job 10.
+15 of 21 steps (71%) done
+
+[Wed Apr 22 15:54:46 2020]
+Job 11: Translating amino acid sequences
+
+
+        augur translate             --tree results/tree.nwk             --ancestral-sequences results/nt_muts.json             --reference-sequence config/reference.gb             --output-node-data results/aa_muts.json         
+[Wed Apr 22 15:54:47 2020]
+Finished job 11.
+16 of 21 steps (76%) done
+
+[Wed Apr 22 15:54:47 2020]
+Job 13: Adding internal clade labels
+
+
+        augur clades --tree results/tree.nwk             --mutations results/nt_muts.json results/aa_muts.json             --clades config/clades.tsv             --output-node-data results/clades.json
+        
+[Wed Apr 22 15:54:48 2020]
+Finished job 13.
+17 of 21 steps (81%) done
+
+[Wed Apr 22 15:54:48 2020]
+Job 6: Exporting data files for for auspice
+
+
+        augur export v2             --tree results/tree.nwk             --metadata results/metadata_adjusted.tsv             --node-data results/branch_lengths.json results/nt_muts.json results/aa_muts.json results/traits.json results/clades.json results/recency.json             --auspice-config config/auspice_config.json             --colors config/colors.tsv             --lat-longs config/lat_longs.tsv             --title 'Genomic epidemiology of novel coronavirus'             --description config/description.md             --output results/ncov_with_accessions.json
+        
+[Wed Apr 22 15:54:49 2020]
+Error in rule export:
+    jobid: 6
+    output: results/ncov_with_accessions.json
+    shell:
+        
+        augur export v2             --tree results/tree.nwk             --metadata results/metadata_adjusted.tsv             --node-data results/branch_lengths.json results/nt_muts.json results/aa_muts.json results/traits.json results/clades.json results/recency.json             --auspice-config config/auspice_config.json             --colors config/colors.tsv             --lat-longs config/lat_longs.tsv             --title 'Genomic epidemiology of novel coronavirus'             --description config/description.md             --output results/ncov_with_accessions.json
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /data/PROJETS/COVID_19/TestRealDat_1/.snakemake/log/2020-04-22T155428.582570.snakemake.log
