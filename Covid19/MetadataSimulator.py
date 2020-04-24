@@ -124,17 +124,11 @@ class MetadataBuilder(object):
 
 fasta_in_file =  os.path.join(os.path.dirname(os.getcwd()),"data/gisaid_covid19_usa_1759.fasta")
 
-#fasta_out =  os.path.join(os.path.dirname(os.getcwd()),"data/covid19_10seq_homogeneous.fasta")
-#metadata_file = os.path.join(os.path.dirname(os.getcwd()),"data/metadata_10seq_homogeneous.tsv")
+fasta_out =  os.path.join(os.path.dirname(os.getcwd()),"data/covid19_10seq_homogeneous.fasta")
+metadata_file = os.path.join(os.path.dirname(os.getcwd()),"data/metadata_10seq_homogeneous.tsv")
 
-fasta_out =  os.path.join(os.path.dirname(os.getcwd()),"data/covid19_250seq_heterogeneous.fasta")
-metadata_file = os.path.join(os.path.dirname(os.getcwd()),"data/metadata_250seq_heterogeneous.tsv")
-
-#fasta_out =  os.path.join(os.path.dirname(os.getcwd()),"data/covid19_10seq_heterogeneous.fasta")
-#metadata_file = os.path.join(os.path.dirname(os.getcwd()),"data/metadata_10seq_heterogeneous.tsv")
-
-number_of_isolate = 250
-is_homogeneous_seq = False
+number_of_isolate = 10
+is_homogeneous_seq = True
 
 mbuilder = MetadataBuilder(number_of_isolate, is_homogeneous_seq, fasta_in_file, fasta_out, metadata_file)
 mbuilder.CreateMetadataFile()
