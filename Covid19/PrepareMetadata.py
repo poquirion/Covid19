@@ -19,6 +19,9 @@ test =df_lspq[df_lspq['NO_LSPQ'].isin(['L00251524','Lkkk00251535'])]
 
 rec_id_list = []
 
+out_metadata = os.path.join(base_dir,"data/metadata.tsv")
+out_sequences = os.path.join(base_dir,"data/sequences.fasta")
+
 for rec in SeqIO.parse(gisaid_sequences,'fasta'):
     seqid = re.search(r'^\S+\/(\S+\/\S+\/\d{4})\|\S+',rec.id).group(1)
     rec_id_list.append(seqid)
@@ -30,7 +33,28 @@ for rec in SeqIO.parse(lspq_sequences,'fasta'):
 
 
 subset_lspq = df_lspq[df_lspq['NO_LSPQ'].isin(rec_id_list)]
-print(subset_lspq)
-
 subset_gisaid = df_gisaid[df_gisaid['strain'].isin(rec_id_list)]
-print(subset_gisaid)
+
+subset_lspq_subcol = subset_lspq[['NO_LSPQ','DATE_PRELEV','SEX','AGE','RSS_PATIENT','POSTAL_CODE','VOYAGE_PAYS_1']]
+subset_lspq_subcol.columns = ['strain','date','sex','age','rss','rta','voyage']
+subset_lspq_subcol.insert(loc=1,column='virus',value='ncov',allow_duplicates=True)
+subset_lspq_subcol.insert(loc=5,column='country',value='Canada',allow_duplicates=True)
+subset_lspq_subcol.insert(loc=6,column='division',value='Quebec',allow_duplicates=True)
+subset_lspq_subcol.insert(loc=9,column='country_exposure',value='',allow_duplicates=True)
+subset_lspq_subcol.insert(loc=10,column='division_exposure',value='',allow_duplicates=True)
+subset_lspq_subcol.insert(loc=11,column='rss_exposure',value='',allow_duplicates=True)
+subset_lspq_subcol.insert(loc=12,column='rta_exposure',value='',allow_duplicates=True)
+subset_lspq_subcol.loc[subset_lspq_subcol.voyage == 'AUCUN_VOYAGE','country_exposure'] = subset_lspq_subcol.country
+subset_lspq_subcol.loc[subset_lspq_subcol.voyage == 'AUCUN_VOYAGE','division_exposure'] = subset_lspq_subcol.division
+subset_lspq_subcol.loc[subset_lspq_subcol.voyage == 'AUCUN_VOYAGE','rss_exposure'] = subset_lspq_subcol.rss
+subset_lspq_subcol.loc[subset_lspq_subcol.voyage == 'AUCUN_VOYAGE','rta_exposure'] = subset_lspq_subcol.rta
+subset_lspq_subcol.loc[subset_lspq_subcol.voyage != 'AUCUN_VOYAGE','country_exposure'] = subset_lspq_subcol.voyage
+subset_lspq_subcol.loc[subset_lspq_subcol.voyage != 'AUCUN_VOYAGE','division_exposure'] = subset_lspq_subcol.voyage
+subset_lspq_subcol.loc[subset_lspq_subcol.voyage != 'AUCUN_VOYAGE','rss_exposure'] = subset_lspq_subcol.voyage
+subset_lspq_subcol.loc[subset_lspq_subcol.voyage != 'AUCUN_VOYAGE','rta_exposure'] = subset_lspq_subcol.voyage
+
+pd.set_option('display.max_columns', 20)
+#print(subset_lspq_subcol)
+
+subset_gisaid_subcol = subset_gisaid[['strain','virus','date','sex','age','country','division']]
+print(subset_gisaid_subcol)
