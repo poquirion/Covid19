@@ -12,6 +12,7 @@ logging.basicConfig(level = logging.DEBUG)
 base_dir = "/data/Applications/GitScript/Covid19/NextStrainFiles"
 
 out_all_lat_long_file = os.path.join(base_dir,"config/lat_longs.tsv")
+out_ordering = os.path.join(base_dir,"config/ordering.tsv")
 
 rta_lat_long_file = os.path.join(base_dir,"config/rta_lat_long.tsv")
 rss_lat_long_file = os.path.join(base_dir,"config/rss_lat_long.tsv")
@@ -29,11 +30,14 @@ for level, sublevel in lat_long_level.items():
     print("************************* In Level " + level)
     for sub in sublevel:
         for myfile in lat_long_file[sub]:
-            df = None
+            df_lat_long = None
             #print("MY FILE IS ",myfile)
-            df = pd.read_csv(myfile,delimiter="\t",header=None)
-            df.insert(loc=0,column="",value=level,allow_duplicates=True)
-            #print(df)
-            df.to_csv(out_all_lat_long_file,sep="\t",index=False,header=False,mode='a')
+            df_lat_long = pd.read_csv(myfile,delimiter="\t",header=None)
+            df_lat_long.insert(loc=0,column="",value=level,allow_duplicates=True)
+            #print(df_lat_long)
+            df_ordering = df_lat_long.iloc[:,0:2]
+            df_lat_long.to_csv(out_all_lat_long_file,sep="\t",index=False,header=False,mode='a')
+            df_ordering.to_csv(out_ordering,sep="\t",index=False,header=False,mode='a')
+            
 
 logging.info("End")
