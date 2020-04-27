@@ -1,5 +1,5 @@
 with v as (select NOLSPQ as no_lspq, AGE_ANNEE as age, RSS_PATIENT as rss_patient,AUCUN_VOYAGE as aucun_voyage, VOYAGE_PAYS_1 as voyage_pays_1, DATE_PRELEVEMENT as date_prelev, DATE_RECEPTION as date_recu,
-CH as ch,RESULTAT_LABORATOIRE as res_lab, POSTAL_CODE as postal_code ,MAX(nCov2019_nCov_ARN) as max_res from (select distinct f.folderno as NOLSPQ, to_char(cr.BIRTH_DATE,'YYYY-MM-DD') as DATE_NAISSANCE,
+CH as ch,RESULTAT_LABORATOIRE as res_lab, SUBSTR(POSTAL_CODE,1,3) as postal_code ,MAX(nCov2019_nCov_ARN) as max_res from (select distinct f.folderno as NOLSPQ, to_char(cr.BIRTH_DATE,'YYYY-MM-DD') as DATE_NAISSANCE,
 p.LAST_NAME as NOM, p.FIRST_NAME as PRENOM, 
 case 
     when FLOOR(MONTHS_BETWEEN(COALESCE(cr.DATE_COLLECTED,cr.DATE_RECEIVED),cr.BIRTH_DATE )/12) > 1
