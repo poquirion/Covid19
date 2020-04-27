@@ -1,0 +1,15 @@
+strain	virus	date	sex	age	country	division	rss	rta	country_exposure	division_exposure	rss_exposure	rta_exposure
+LSPQ_1_cmb	ncov	2020-04-24	M	67	Canada	Quebec	15-Laurentides	J6Z	Canada	Quebec	15-Laurentides	J6Z
+L00241026	ncov	2020-04-24	F	74	Canada	Quebec	07-Outaouais	J8Y	Canada	Quebec	07-Outaouais	J8Y
+Canada/BC_37_0-2/2020	ncov	2020-02-16	Female	35	Canada	British Columbia	Canada	Canada	Iran	Iran	Iran	Iran
+Canada/BC_5282984/2020	ncov	2020-03-11	Male	28	Canada	British Columbia	Canada	Canada	Canada	British Columbia	Canada	Canada
+Canada/BC_7277381/2020	ncov	2020-03-12	Female	55	Canada	British Columbia	Canada	Canada	Canada	British Columbia	Canada	Canada
+Canada/ON-PHL2445/2020	ncov	2020-01-25	Male	56	Canada	Ontario	Canada	Canada	China	Hubei	China	China
+Canada/ON_PHL2223/2020	ncov	2020	?	?	Canada	Ontario	Canada	Canada	Canada	Ontario	Canada	Canada
+Canada/ON_PHL3670/2020	ncov	2020-03-20	Female	57	Canada	Ontario	Canada	Canada	Canada	Ontario	Canada	Canada
+Canada/ON_PHL3919/2020	ncov	2020-03-14	Female	60	Canada	Ontario	Canada	Canada	Canada	Ontario	Canada	Canada
+Netherlands/Utrecht_1/2020	ncov	2020-03-03	?	?	Netherlands	Utrecht	Netherlands	Netherlands	Netherlands	Utrecht	Netherlands	Netherlands
+Portugal/PT0090/2020	ncov	2020-03-21	Female	45	Portugal		Portugal	Portugal	Portugal		Portugal	Portugal
+USA/CruiseA-12/2020	ncov	2020-02-20	?	?	USA	Diamond Princess	USA	USA	USA	Diamond Princess	USA	USA
+Wuhan-Hu-1/2019	ncov	2019-12-26	?	?	China	Hubei	China	China	China	Hubei	China	China
+Wuhan/WH01/2019	ncov	2019-12-26	Male	44	China	Hubei	China	China	China	Hubei	China	China
