@@ -12,7 +12,7 @@ import re
 base_dir = "/data/Applications/GitScript/Covid19/NextStrainFiles/" 
 
 gisaid_metadata = os.path.join(base_dir,"data/original/data/metadata.tsv") 
-lspq_sgil_extract = os.path.join(base_dir,"data/sgil_extract.tsv")
+lspq_sgil_extract = os.path.join(base_dir,"data/sgil_extract_20200427.tsv")
 
 gisaid_ref_sequences = os.path.join(base_dir,"data/gisaid/gisaid_wuhan_ref_20200425.fasta")
 gisaid_sequences = os.path.join(base_dir,"data/gisaid/randomseq.fasta")
