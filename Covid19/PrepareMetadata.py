@@ -30,6 +30,9 @@ out_sequences = os.path.join(base_dir,"data/sequences.fasta")
 for rec in SeqIO.parse(gisaid_sequences,'fasta'):
     seqid = re.search(r'^\S+\/(\S+\/\S+\/\d{4})\|\S+',rec.id).group(1)
     rec_id_list.append(seqid)
+    rec.id = seqid
+    rec.name = seqid
+    rec.description = ""
     rec_list.append(rec)
 
 
@@ -39,12 +42,18 @@ for rec in SeqIO.parse(gisaid_ref_sequences,'fasta'):
     except:
         seqid = re.search(r'^\S+\/(\S+\/\d{4})\|\S+',rec.id).group(1)
     rec_id_list.append(seqid)
+    rec.id = seqid
+    rec.name = seqid
+    rec.description = ""
     rec_list.append(rec)
 
 
 for rec in SeqIO.parse(lspq_sequences,'fasta'):
     seqid = re.search(r'(^\S+)\/\S+\/\S+',rec.id).group(1)
     rec_id_list.append(seqid)
+    rec.id = seqid
+    rec.name = seqid
+    rec.description = ""
     rec_list.append(rec)
 
 subset_lspq = df_lspq[df_lspq['NO_LSPQ'].isin(rec_id_list)]
