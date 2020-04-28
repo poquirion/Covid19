@@ -77,7 +77,7 @@ missing_country = CheckMissingCountry()
 
 if  missing_country:
     logging.error(" ----------- Countries missing -------------")
-    logging.info("Add the following countries in " + country_lat_long_file)
+    logging.info("Add the following countries (" + str(len(missing_country)) + ") in "  + country_lat_long_file)
     logging.info(str(missing_country))
     logging.info(" and run CreateNextstrainConfigV2.py")
     exit(0)    
