@@ -8,8 +8,22 @@ from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 import pandas as pd
 import re
+import logging
+from googletrans import Translator
+import urllib3
+
+logging.getLogger("urllib3").setLevel(logging.WARNING)
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+pd.set_option('display.max_columns', 20)
+
+translator = Translator()
+logging.basicConfig(level = logging.DEBUG)
 
 base_dir = "/data/Applications/GitScript/Covid19/NextStrainFiles/" 
+lat_long_file = os.path.join(base_dir,"config/lat_longs.tsv")
+ordering_file = os.path.join(base_dir,"config/ordering.tsv")
+
 
 gisaid_metadata = os.path.join(base_dir,"data/original/data/metadata.tsv") 
 lspq_sgil_extract = os.path.join(base_dir,"data/sgil_extract_20200427.tsv")
@@ -20,12 +34,53 @@ lspq_sequences = os.path.join(base_dir,"data/lspq/sequences.fasta")
 
 df_lspq = pd.read_csv(lspq_sgil_extract,delimiter="\t",index_col=False)
 df_gisaid = pd.read_csv(gisaid_metadata,delimiter="\t",index_col=False)
+df_lat_long = pd.read_csv(lat_long_file,delimiter='\t',header=None)
+df_ordering = pd.read_csv(ordering_file,delimiter='\t',header=None)
 
 rec_list = []
 rec_id_list = []
 
 out_metadata = os.path.join(base_dir,"data/metadata.tsv")
 out_sequences = os.path.join(base_dir,"data/sequences.fasta")
+
+
+def ConvertFrench2English(countries_list):
+    for country in countries_list:
+        english_country = str(translator.translate(country,dest='en').text).capitalize()
+        #print("ENGLISH IS ",english_country)
+        if len(df_lat_long.loc[df_lat_long[1] == english_country,1].values) > 0:
+            print("YES FOR ",english_country, "   ",country)
+            #df_lspq.loc[df_lspq['VOYAGE_PAYS_1'] == country, 'VOYAGE_PAYS_1'] = english_country
+            #print(df_lspq.loc[df_lspq['VOYAGE_PAYS_1'].isin([str(country).capitalize(),str(country).lower(),str(country).upper()]),'VOYAGE_PAYS_1'])
+            df_lspq.loc[df_lspq['VOYAGE_PAYS_1'].isin([str(country).capitalize(),str(country).lower(),str(country).upper()]),'VOYAGE_PAYS_1'] = english_country
+
+
+
+def CheckMissingCountry():
+    locs_w_latlong_orig = df_lat_long.loc[df_lat_long[0]=='country',1].values 
+    locs_w_latlong = [x.lower() for x in locs_w_latlong_orig]
+
+    locs_w_ordering_orig = df_ordering.loc[df_ordering[0]=='country',1].values 
+    locs_w_ordering = [x.lower() for x in locs_w_ordering_orig]
+
+    locs_in_lspq_orig = [x for x in df_lspq['VOYAGE_PAYS_1'].unique() if x != "AUCUN_VOYAGE"]
+    locs_in_lspq = [x.lower() for x in locs_in_lspq_orig]
+
+    missing_latlong_locs = [loc for loc in locs_in_lspq if loc not in locs_w_latlong]
+    ConvertFrench2English(missing_latlong_locs)
+    #print(missing_latlong_locs)
+
+    print(df_lspq)
+    missing_ordering_locs = [loc for loc in locs_in_lspq if loc not in locs_w_ordering]
+    #print(missing_ordering_locs)
+    return True
+
+if not CheckMissingCountry():
+    logging.error("Country manquant")
+    exit(0)    
+else:
+    print("OK")
+    exit(0)
 
 for rec in SeqIO.parse(gisaid_sequences,'fasta'):
     seqid = re.search(r'^\S+\/(\S+\/\S+\/\d{4})\|\S+',rec.id).group(1)
@@ -78,7 +133,6 @@ subset_lspq_subcol.loc[subset_lspq_subcol.voyage != 'AUCUN_VOYAGE','division_exp
 subset_lspq_subcol.loc[subset_lspq_subcol.voyage != 'AUCUN_VOYAGE','rss_exposure'] = subset_lspq_subcol.voyage
 subset_lspq_subcol.loc[subset_lspq_subcol.voyage != 'AUCUN_VOYAGE','rta_exposure'] = subset_lspq_subcol.voyage
 
-pd.set_option('display.max_columns', 20)
 del subset_lspq_subcol['voyage']
 #print(subset_lspq_subcol)
 
@@ -100,3 +154,5 @@ subset_lspq_subcol.to_csv(out_metadata,sep="\t",index=False)
 subset_gisaid_subcol.to_csv(out_metadata,sep="\t",index=False,mode='a',header=False)
 
 SeqIO.write(rec_list,out_sequences,'fasta')
+
+logging.info("End")
