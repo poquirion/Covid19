@@ -26,7 +26,7 @@ country_lat_long_file = os.path.join(base_dir,"config/country_lat_long.tsv")
 ordering_file = os.path.join(base_dir,"config/ordering.tsv")
 
 gisaid_metadata = os.path.join(base_dir,"data/original/data/metadata.tsv") 
-lspq_sgil_extract = os.path.join(base_dir,"data/sgil_extract_20200427.tsv")
+lspq_sgil_extract = os.path.join(base_dir,"data/sgil_extract.tsv")
 
 gisaid_ref_sequences = os.path.join(base_dir,"data/gisaid/gisaid_wuhan_ref_20200425.fasta")
 gisaid_sequences = os.path.join(base_dir,"data/gisaid/randomseq.fasta")
@@ -48,8 +48,8 @@ def ConvertFrench2English(countries_list):
     still_missing_countries = []
 
     for country in countries_list:
-        logging.info("Convert " + country + " in english")
         english_country = str(translator.translate(country,dest='en').text).capitalize()
+        logging.info("Convert " + country + " in english => " + english_country)
         if len(df_lat_long.loc[df_lat_long[1] == english_country,1].values) > 0:
             df_lspq.loc[df_lspq['VOYAGE_PAYS_1'].isin([str(country).capitalize(),str(country).lower(),str(country).upper()]),'VOYAGE_PAYS_1'] = english_country
         else:
