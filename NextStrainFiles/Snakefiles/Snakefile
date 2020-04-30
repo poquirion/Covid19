@@ -289,7 +289,8 @@ rule adjust_metadata:
         """
         cp {input} {output}
         """
-
+'''
+EricF comment
 rule tree:
     message: "Building tree"
     input:
@@ -303,6 +304,25 @@ rule tree:
             --alignment {input.alignment} \
             --output {output.tree} \
             --nthreads {threads}
+        """
+'''
+
+rule tree:
+    message: "Building tree"
+    input:
+        alignment = "results/subsampled_alignment{region}.fasta"
+    output:
+        tree = "results/tree_raw{region}.nwk"
+    params:
+        method = "raxml"
+    threads: 35
+    shell:
+        """
+        augur tree \
+            --alignment {input.alignment} \
+            --output {output.tree} \
+            --nthreads {threads} \
+            --method {params.method}
         """
 
 def _get_alignments_for_tree(wildcards):

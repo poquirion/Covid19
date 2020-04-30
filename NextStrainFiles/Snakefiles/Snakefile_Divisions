@@ -78,6 +78,7 @@ rule clean_export_regions:
 # Allows 'normal' run of export to be forced to correct lat-long & ordering
 # Just runs this, not ZH & GISAID, to speed up & reduce errors.
 rule export_all_regions:
+    message: "********************* IN EXPORT_ALL_REGIONS "
     input:
         colors_file = expand("config/colors{region}.tsv", region=REGIONS),
         auspice_json = expand("results/ncov_with_accessions{region}.json", region=REGIONS),
@@ -90,6 +91,7 @@ rule export_all_regions:
             --metadata {input.metadata} \
             --colors {input.colors} \
             --latlong {input.lat_longs} 
+        echo "*************** IN export_all_regions"
         """
 
 '''
@@ -153,7 +155,7 @@ rule subsample_focus:
     output:
         sequences = "results/subsample_focus{region}.fasta"
     params:
-        group_by = "year month",
+        group_by = "rta year month",
         seq_per_group_global = 40, # i.e. if not regional build
         seq_per_group_regional = 260
     shell:
@@ -165,12 +167,12 @@ rule subsample_focus:
             seq_per_group={params.seq_per_group_global}
             regionarg="--exclude-where division="
             region="frog"   #I don't know! It wouldn't work without something!
-            echo "Filtering for a global run - $seq_per_group per division"
+            echo "Filtering for a global run - $seq_per_group per rta"
         else
             seq_per_group={params.seq_per_group_regional}
             region="${{rgn//[_y]/}}"
             region="${{region//[-y]/ }}"
-            echo "Filtering for a focal run on $region - $seq_per_group per division"
+            echo "Filtering for a focal run on $region - $seq_per_group per rta"
             regionarg="--exclude-where division!="
             echo "   This is passed to augur as $regionarg'$region'"
         fi
@@ -312,7 +314,7 @@ rule subsample_context:
     output:
         sequences = "results/subsample_context{region}.fasta"
     params:
-        group_by = "rss year month",
+        group_by = "countext year month",
         sequences_per_group = 20
     shell:
         """
@@ -326,7 +328,7 @@ rule subsample_context:
             region="${{rgn//[_y]/}}"
             region="${{region//[-y]/ }}"
             echo "Creating a filtered context for a focal run on $region. Context is {params.sequences_per_group}seqs per '{params.group_by}'"
-            regionarg="--exclude-where region="
+            regionarg="--exclude-where division="
             echo "   (This is passed to 'augur filter' as \"$regionarg'$region'\")"
 
             augur filter \
