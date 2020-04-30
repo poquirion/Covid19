@@ -12,7 +12,12 @@ logging.basicConfig(level = logging.DEBUG)
 base_dir = "/data/Applications/GitScript/Covid19/NextStrainFiles"
 
 out_all_lat_long_file = os.path.join(base_dir,"config/lat_longs.tsv")
+with open(out_all_lat_long_file,'w') as ll:
+    pass
+
 out_ordering = os.path.join(base_dir,"config/ordering.tsv")
+with open(out_ordering,'w') as ordering:
+    pass
 
 rta_lat_long_file = os.path.join(base_dir,"config/rta_lat_long.tsv")
 rss_lat_long_file = os.path.join(base_dir,"config/rss_lat_long.tsv")
