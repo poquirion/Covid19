@@ -2425,7 +2425,10 @@ division	Europe
 division	North America
 division	Oceania
 division	South America
+
+country	Canada
 country	Argentina
+country	USA
 country	Asia
 country	Austria
 country	Croatia
@@ -2487,7 +2490,6 @@ country	iraq
 country	algerie
 country	maroc
 country	cambodge
-country	Canada
 country	Aargau
 country	Aatalunya
 country	Abruzzo
@@ -2894,7 +2896,6 @@ country	Tver Region
 country	UK
 country	Ukkel
 country	United Kingdom
-country	USA
 country	Usti nad Labem
 country	Utah
 country	Utrecht

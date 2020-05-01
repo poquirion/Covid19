@@ -2,7 +2,32 @@
 # To temporarily override or provide a value, you can use snakemake's --config
 # or --configfile options.
 ---
-s3_staging_url: s3://nextstrain-staging
-slack_webhook: ~
+fasta_path: "/genfs/projects/COVID_consensus/2020_04_27/"
+qc_meta: "data/sgil_extract.tsv"
+world_meta: "https://raw.githubusercontent.com/nextstrain/ncov/master/data/metadata.tsv"
+exclude_latest: "https://raw.githubusercontent.com/nextstrain/ncov/master/config/exclude.txt"
+
+# perhaps put that in results
 sequences: "data/sequences.fasta"
-metadata: "data/metadata.tsv"
+# this too?
+metadata: "data/merged_metadata.tsv"
+
+include: "config/include.txt"
+exclude: "config/exclude.txt"
+reference: "config/reference.gb"
+outgroup: "config/outgroup.fasta"
+ordering: "config/ordering.tsv"
+color_schemes: "config/color_schemes.tsv"
+auspice_config: "config/auspice_config.json"
+auspice_config_gisaid: "config/auspice_config_gisaid.json"
+auspice_config_zh: "config/auspice_config_zh.json"
+lat_longs: "config/lat_longs.tsv"
+description: "config/description.md"
+description_zh: "config/description_zh.md"
+clades: "config/clades.tsv"
+
+# filters
+group_by: "country year month"
+sequences_per_group: "25"
+min_length: 27000
+exclude_where: "date='2015'"
