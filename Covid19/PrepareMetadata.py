@@ -29,7 +29,7 @@ gisaid_metadata = os.path.join(base_dir,"data/original/data/metadata.tsv")
 lspq_sgil_extract = os.path.join(base_dir,"data/sgil_extract.tsv")
 
 gisaid_ref_sequences = os.path.join(base_dir,"data/gisaid/gisaid_wuhan_ref_20200425.fasta")
-gisaid_sequences = os.path.join(base_dir,"data/gisaid/randomseq.fasta")
+gisaid_sequences = os.path.join(base_dir,"data/gisaid/sequences_carmen_lia_murall.fasta")
 lspq_sequences = os.path.join(base_dir,"data/lspq/sequences.fasta")
 
 df_lspq = pd.read_csv(lspq_sgil_extract,delimiter="\t",index_col=False)
@@ -83,7 +83,11 @@ if  missing_country:
     exit(0)    
 
 for rec in SeqIO.parse(gisaid_sequences,'fasta'):
-    seqid = re.search(r'^\S+\/(\S+\/\S+\/\d{4})\|\S+',rec.id).group(1)
+    try:
+        seqid = re.search(r'^\S+\/(\S+\/\S+\/\d{4})\|\S+',rec.id).group(1)
+    except:
+        seqid = re.search(r'^hCoV-19\/(\S+\/\S+\/\d{4})',rec.id).group(1)
+
     rec_id_list.append(seqid)
     rec.id = seqid
     rec.name = seqid
@@ -96,6 +100,7 @@ for rec in SeqIO.parse(gisaid_ref_sequences,'fasta'):
         seqid = re.search(r'^\S+\/(\S+\/\S+\/\d{4})\|\S+',rec.id).group(1)
     except:
         seqid = re.search(r'^\S+\/(\S+\/\d{4})\|\S+',rec.id).group(1)
+
     rec_id_list.append(seqid)
     rec.id = seqid
     rec.name = seqid
