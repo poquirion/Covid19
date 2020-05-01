@@ -110,7 +110,7 @@ def main():
     gsaid_df.loc[gsaid_df['region'] == 'North America', 'rta'] = gsaid_df['country']
     gsaid_df.loc[gsaid_df['division'].isin(neighbourg), 'rss'] = gsaid_df['division']
 
-    # gsaid_df['rta_exposure'] = gsaid_df['country_exposure']
+    gsaid_df['rta_exposure'] = gsaid_df['country_exposure']
 
 
     # neighbourg

@@ -6,10 +6,17 @@ fasta_path: "/genfs/projects/COVID_consensus/2020_04_27/"
 qc_meta: "data/sgil_extract.tsv"
 world_meta: "https://raw.githubusercontent.com/nextstrain/ncov/master/data/metadata.tsv"
 exclude_latest: "https://raw.githubusercontent.com/nextstrain/ncov/master/config/exclude.txt"
+extra_fasta: "--extra_fasta_files data/gisaid_norm_cov2020_sequences.fasta"
+
+# filters
+group_by: "region year month"
+sequences_per_group: "10"  # 10 region year month get about 225 samples
+min_length: 27000
+exclude_where: "date='2015'"
 
 
-include: "config/include.txt"
-reference: "config/reference.gb"
+include: "config/include.txt" # all QC data and two original wuhan are included
+reference: "config/coronavirus_Wuhan-Hu-1.gb" # the one used for assembly
 outgroup: "config/outgroup.fasta"
 ordering: "config/ordering.tsv"
 color_schemes: "config/color_schemes.tsv"
@@ -21,8 +28,3 @@ description: "config/description.md"
 description_zh: "config/description_zh.md"
 clades: "config/clades.tsv"
 
-# filters
-group_by: "country year month"
-sequences_per_group: "25"
-min_length: 27000
-exclude_where: "date='2015'"

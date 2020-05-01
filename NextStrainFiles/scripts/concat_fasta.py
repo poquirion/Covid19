@@ -11,7 +11,7 @@ def main():
     )
 
     parser.add_argument('--input_dir', type=dir_path, required=True, help="dir with fasta")
-    parser.add_argument('--extra_fasta_files', default=[], type=list, help="extra fasta file list to include in the " \
+    parser.add_argument('--extra_fasta_files', nargs='+', help="extra fasta file list to include in the " \
                                                                           "sequence")
     parser.add_argument('--output', type=str, required=True, help="output fasta")
     args = parser.parse_args()
@@ -23,9 +23,13 @@ def main():
     in_fasta = glob.glob("{}/*fasta".format(in_dir))
 
     with open(out_file, 'w') as wfp:
-        for f in in_fasta + in_extra:
+        for f in in_fasta:
             with open(f, 'r') as fp:
+                # qc inputs need some reformating
                 wfp.write('{}\n'.format(fp.readline().split('/')[0]))
+                shutil.copyfileobj(fp, wfp)
+        for f in in_extra:
+            with(open(f, 'r')) as fp:
                 shutil.copyfileobj(fp, wfp)
 
 

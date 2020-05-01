@@ -72,9 +72,12 @@ rule setup:
         sequences = "results/sequences.fasta",
         metadata = "results/merged_metadata.tsv",
         exclude = "results/exclude.txt"
+    params:
+        extra_fasta = config['extra_fasta']
     shell:
         """
-        scripts/concat_fasta.py --input_dir {input.fasta_path} --output {output.sequences} 
+        scripts/concat_fasta.py --input_dir {input.fasta_path} --output {output.sequences}\
+         {params.extra_fasta}
         scripts/concat_meta.py --inspq_meta {input.qc_meta} --nextstrain_metadata {input.world_meta}  --output \
         {output.metadata} --fasta_dir  {input.fasta_path}
         cp {input.world_exclude} {output.exclude}
@@ -220,19 +223,6 @@ rule subsample:
         cp {input} {output}
         """
 
-'''
-EricF comment
-rule adjust_metadata:
-    input:
-        rules.download.output.metadata
-    output:
-        "results/metadata_adjusted{region}.tsv"
-    shell:
-        """
-        cp {input} {output}
-        """
-'''
-
 rule adjust_metadata:
     input:
         rules.setup.output.metadata
@@ -284,7 +274,7 @@ rule refine:
         node_data = "results/branch_lengths{region}.json"
     threads: 1
     params:
-        root = '', #"--root Wuhan-Hu-1/2019 Wuhan/WH01/2019",
+        root = "--root Wuhan-Hu-1/2019 Wuhan/WH01/2019",
         clock_rate = 0.0008,
         clock_std_dev = 0.0004,
         coalescent = "skyline",

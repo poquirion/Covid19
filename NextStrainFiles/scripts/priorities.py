@@ -1,16 +1,15 @@
+
 """
 Mask initial bases from alignment FASTA
 """
 import argparse
-from random import shuffle
 from collections import defaultdict
-import Bio
-import numpy as np
-from Bio.SeqIO.FastaIO import SimpleFastaParser
-from Bio.Seq import Seq
-from Bio import AlignIO
-from scipy import sparse
+from random import shuffle
 
+import numpy as np
+from Bio import AlignIO
+from Bio.SeqIO.FastaIO import SimpleFastaParser
+from scipy import sparse
 
 INITIALISATION_LENGTH = 1000000
 
@@ -54,9 +53,9 @@ def calculate_snp_matrix(fastafile, consensus=None, zipped=False):
 
             if right >= (current_length/2):
                 current_length = current_length + INITIALISATION_LENGTH
-                row.resize(current_length)
-                col.resize(current_length)
-                val.resize(current_length)
+                row.resize(current_length, refcheck=False)
+                col.resize(current_length, refcheck=False)
+                val.resize(current_length, refcheck=False)
 
             row[n_snps:right] = r
             col[n_snps:right] = np.flatnonzero(snps)
@@ -140,7 +139,10 @@ if __name__ == '__main__':
 
     tmp_context_seqs = {x.id: x.upper() for x in AlignIO.read(args.alignment, format='fasta')}
     context_seqs_array = np.array([list(str(tmp_context_seqs[x[1]].seq)) for x in keep])
-    mask_count_context = {k[1]:m for k,m in zip(keep, np.sum(np.logical_or(context_seqs_array=='N',context_seqs_array=='-'), axis=1))}
+
+    mask_count_context = {k[1]: m for k, m in
+                          zip(keep, np.sum(np.logical_or(context_seqs_array == 'N', context_seqs_array == '-'),
+                                           axis=1))}
 
     # for each context sequence, calculate minimal distance to focal set, weigh with number of N/- to pick best sequence
     d = np.array(calculate_distance_matrix(context_seqs_dict['snps'], focal_seqs_dict['snps'], consensus = context_seqs_dict['consensus']))
