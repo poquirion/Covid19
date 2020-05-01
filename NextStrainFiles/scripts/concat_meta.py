@@ -73,6 +73,7 @@ def main():
     trans = {pays_qc[code]: pays_anglo[code] for code in pays_qc.keys()}
     trans['Aucun_Voyage'] = '?'
     lnspq_df['country_exposure'].replace(trans, inplace=True)
+    lnspq_df['rta_exposure'] = lnspq_df['country_exposure']
 
     fastas = glob.glob("{}/*fasta".format(fasta_dir))
     fasta_id_len = count_fasta_len(fastas)
@@ -90,7 +91,7 @@ def main():
 
 
     if fasta_dir:
-        lnspq_df['url'] = 'covseq.ca/data/{}'.format(os.path.basename(fasta_dir.strip('/')))
+        lnspq_df['url'] = 'http://www.covseq.ca/data/{}'.format(os.path.basename(fasta_dir.strip('/')))
     else:
         lnspq_df['url'] = ''
 
@@ -109,6 +110,7 @@ def main():
     gsaid_df.loc[gsaid_df['region'] == 'North America', 'rta'] = gsaid_df['country']
     gsaid_df.loc[gsaid_df['division'].isin(neighbourg), 'rss'] = gsaid_df['division']
 
+    # gsaid_df['rta_exposure'] = gsaid_df['country_exposure']
 
 
     # neighbourg

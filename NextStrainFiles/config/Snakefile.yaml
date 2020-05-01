@@ -7,13 +7,8 @@ qc_meta: "data/sgil_extract.tsv"
 world_meta: "https://raw.githubusercontent.com/nextstrain/ncov/master/data/metadata.tsv"
 exclude_latest: "https://raw.githubusercontent.com/nextstrain/ncov/master/config/exclude.txt"
 
-# perhaps put that in results
-sequences: "data/sequences.fasta"
-# this too?
-metadata: "data/merged_metadata.tsv"
 
 include: "config/include.txt"
-exclude: "config/exclude.txt"
 reference: "config/reference.gb"
 outgroup: "config/outgroup.fasta"
 ordering: "config/ordering.tsv"

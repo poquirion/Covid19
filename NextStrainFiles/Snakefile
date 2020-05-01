@@ -53,8 +53,8 @@ rule all:
 rule download_latest_meta:
     message: "get metadata from nextstrain"
     output:
-        local_world_meta = 'data/nextstrain_meta{}.tsv'.format(datetime.date.today()),
-        local_world_exclude = 'data/nextstrain_exclude{}.tsv'.format(datetime.date.today())
+        local_world_meta = 'results/nextstrain_meta{}.tsv'.format(datetime.date.today()),
+        local_world_exclude = 'results/nextstrain_exclude{}.tsv'.format(datetime.date.today())
     shell:
         """
         wget {config[world_meta]} -O {output.local_world_meta}
@@ -69,9 +69,9 @@ rule setup:
         world_meta = rules.download_latest_meta.output.local_world_meta,
         world_exclude = rules.download_latest_meta.output.local_world_exclude
     output:
-        sequences = config["sequences"],
-        metadata = config["metadata"],
-        exclude = config["exclude"]
+        sequences = "results/sequences.fasta",
+        metadata = "results/merged_metadata.tsv",
+        exclude = "results/exclude.txt"
     shell:
         """
         scripts/concat_fasta.py --input_dir {input.fasta_path} --output {output.sequences} 
@@ -156,7 +156,7 @@ rule align:
         reference = config["reference"]
     output:
         alignment = "results/split_alignments/{cluster}.fasta"
-    threads: 2
+    threads: 8
     shell:
         """
         augur align \
@@ -249,7 +249,7 @@ rule tree:
         alignment = "results/subsampled_alignment{region}.fasta"
     output:
         tree = "results/tree_raw{region}.nwk"
-    threads: 4
+    threads: 8
     shell:
         """
         augur tree \
@@ -284,7 +284,7 @@ rule refine:
         node_data = "results/branch_lengths{region}.json"
     threads: 1
     params:
-        root = "Wuhan-Hu-1/2019 Wuhan/WH01/2019",
+        root = '', #"--root Wuhan-Hu-1/2019 Wuhan/WH01/2019",
         clock_rate = 0.0008,
         clock_std_dev = 0.0004,
         coalescent = "skyline",
@@ -299,7 +299,7 @@ rule refine:
             --metadata {input.metadata} \
             --output-tree {output.tree} \
             --output-node-data {output.node_data} \
-            --root {params.root} \
+            {params.root} \
             --timetree \
             --clock-rate {params.clock_rate} \
             --clock-std-dev {params.clock_std_dev} \
