@@ -539,14 +539,19 @@ rule incorporate_travel_history:
 rule fix_colorings:
     message: "Remove extraneous colorings for main build"
     input:
-        auspice_json = rules.incorporate_travel_history.output.auspice_json
+        auspice_json = rules.incorporate_travel_history.output.auspice_json,
+        auspice_json_no_travel = rules.export.output.auspice_json
     output:
-        auspice_json = "auspice/ncov{region}.json"
+        auspice_json = "auspice/ncov{region}.json",
+        auspice_json_no_travel = "auspice/ncov{region}_no_travel_history.json"
     shell:
         """
         python scripts/fix-colorings.py \
             --input {input.auspice_json} \
             --output {output.auspice_json}
+        python scripts/fix-colorings.py \
+            --input {input.auspice_json_no_travel} \
+            --output {output.auspice_json_no_travel}
         """
 
 
