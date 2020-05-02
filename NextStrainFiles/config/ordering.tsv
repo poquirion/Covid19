@@ -435,6 +435,9 @@ rta	Africa
 rta	Europe
 rta	North America
 rta	Oceania
+rta	Australia
+rta	Brazil
+rta	cuba
 rta	South America
 rta	inde
 rta	états-unis
@@ -442,7 +445,6 @@ rta	dominique
 rta	rép. dominicaine
 rta	suisse
 rta	royaume-uni
-rta	cuba
 rta	australie
 rta	puerto rico
 rta	émirat arabes unis
@@ -2425,7 +2427,7 @@ division	Europe
 division	North America
 division	Oceania
 division	South America
-
+	
 country	Canada
 country	Argentina
 country	USA
@@ -2446,6 +2448,7 @@ country	Luxembourg
 country	Norway
 country	Panama
 country	Peru
+country	Brazil
 country	Philippines
 country	Sri Lanka
 country	Turkey
